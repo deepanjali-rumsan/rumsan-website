@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="absolute right-6 bottom-72 w-6 h-6 bg-blue-300 opacity-60 rounded-sm"></div>
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 relative">
+        <h1 className="leading-tight mb-8 relative">
           <span className="block" style={{ color: "#4252FF" }}>
             Bridging Yesterday&apos;s
           </span>
