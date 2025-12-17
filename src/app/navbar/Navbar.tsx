@@ -5,12 +5,13 @@ import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Container } from "@/components/ui/container";
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-6 md:px-12 py-6 bg-white">
-      <div className="flex items-center justify-between">
-        <div className="ml-6">
+    <nav className="w-full py-6 bg-white">
+      <Container className="flex items-center justify-between">
+        <div>
           <Image
             src="https://assets.rumsan.net/rumsan-group/rumsan-logo.png"
             alt="RUMSAN"
@@ -85,7 +86,7 @@ export default function Navbar() {
             </div>
           </SheetContent>
         </Sheet>
-      </div>
+      </Container>
     </nav>
   );
 }
