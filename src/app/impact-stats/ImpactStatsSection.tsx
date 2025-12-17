@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { Folder, Globe, Users, Heart, GithubIcon } from "lucide-react";
+import { Container } from "@/components/ui/container";
 
 export default function ImpactStatsSection() {
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4">
+      <Container>
         <h2 className="mb-12 md:mb-16 leading-tight text-center text-4xl md:text-5xl font-bold">
           <span style={{ color: "#4252FF" }}>Turning Impact Into</span>
           <br />
@@ -96,7 +97,7 @@ export default function ImpactStatsSection() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

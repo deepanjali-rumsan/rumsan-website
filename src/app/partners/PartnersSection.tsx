@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
+import { Container } from "@/components/ui/container";
 
 const partners = [
   {
@@ -62,10 +63,14 @@ const partners = [
   },
 ];
 
+// Split partners into two groups
+const partnersFirst = partners.slice(0, 6);
+const partnersSecond = partners.slice(6);
+
 export default function PartnersSection() {
   return (
     <section>
-      <div className="container mx-auto px-4">
+      <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,29 +78,54 @@ export default function PartnersSection() {
           transition={{ duration: 0.8 }}
           className="relative"
         >
+          {/* First Slider */}
           <InfiniteSlider
             gap={40}
             duration={30}
             durationOnHover={50}
             className="py-8"
           >
-            {partners.map((partner) => (
+            {partnersFirst.map((partner) => (
               <div
                 key={partner.id}
-                className="flex items-center justify-center p-6 bg-white rounded-xl hover:shadow-lg transition-all duration-300 group cursor-pointer min-w-[200px] h-[150px]"
+                className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]"
               >
                 <Image
                   src={partner.logo}
                   alt={partner.title}
                   width={200}
                   height={150}
-                  className="max-w-full max-h-full object-contain transition-all duration-300"
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
+          </InfiniteSlider>
+
+          {/* Second Slider */}
+          <InfiniteSlider
+            gap={40}
+            duration={35}
+            durationOnHover={50}
+            className="py-8"
+            reverse
+          >
+            {partnersSecond.map((partner) => (
+              <div
+                key={partner.id}
+                className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]"
+              >
+                <Image
+                  src={partner.logo}
+                  alt={partner.title}
+                  width={200}
+                  height={150}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             ))}
           </InfiniteSlider>
         </motion.div>
-      </div>
+      </Container>
     </section>
   );
 }

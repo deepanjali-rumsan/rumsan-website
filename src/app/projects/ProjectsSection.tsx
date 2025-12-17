@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Container } from "@/components/ui/container";
 
 const projects = [
   {
@@ -32,7 +33,7 @@ const projects = [
 export default function ProjectsSection() {
   return (
     <section className="py-20 bg-[#FAFAFA]">
-      <div className="container mx-auto px-4">
+      <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +58,7 @@ export default function ProjectsSection() {
           </Link>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-15">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -65,7 +66,7 @@ export default function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-96 md:h-[450px] lg:h-[500px]"
+              className="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-96 md:h-[450px] lg:h-[550px]"
             >
               <Image
                 src={project.image}
@@ -87,7 +88,7 @@ export default function ProjectsSection() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
