@@ -2,6 +2,7 @@ import Navbar from "./navbar/Navbar";
 import Hero from "./hero/Hero";
 import FeatureCards from "./feature-cards/FeatureCards";
 import PartnersSection from "./partners/PartnersSection";
+import ServicesSection from "./services-section/ServicesSection";
 import ImpactStatsSection from "./impact-stats/ImpactStatsSection";
 import ProjectsSection from "./projects/ProjectsSection";
 import CTASection from "./cta-section/CTASection";
@@ -29,6 +30,7 @@ export default function Home() {
         </Container>
       </section>
       <PartnersSection />
+      <ServicesSection />
       <ImpactStatsSection />
       <ProjectsSection />
       <CTASection />

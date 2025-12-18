@@ -6,48 +6,62 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Container } from "@/components/ui/container";
+import {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuLink,
+} from "@/components/ui/navigation-menu";
 
 export default function Navbar() {
   return (
     <nav className="w-full py-6 bg-white">
       <Container className="flex items-center justify-between">
         <div>
-          <Image
-            src="https://assets.rumsan.net/rumsan-group/rumsan-logo.png"
-            alt="RUMSAN"
-            width={140}
-            height={40}
-            priority
-          />
+          <Link href="/">
+            <Image
+              src="https://assets.rumsan.net/rumsan-group/rumsan-logo.png"
+              alt="RUMSAN"
+              width={140}
+              height={40}
+              priority
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-10">
-          <Link
-            href="/about"
-            className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
-          >
-            About Us
-          </Link>
-          <Link
-            href="/portfolio"
-            className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
-          >
-            Portfolio
-          </Link>
-          <Link
-            href="/services"
-            className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
-          >
-            Our Services
-          </Link>
-          <Link
-            href="/career"
-            className="text-gray-800 hover:text-blue-600 transition-colors font-medium"
-          >
-            Career
-          </Link>
-        </div>
+        <NavigationMenu className="hidden md:flex" viewport={false}>
+          <NavigationMenuList className="gap-6">
+            <NavigationMenuItem>
+              <Link href="/about" legacyBehavior passHref>
+                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                  About Us
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/portfolio" legacyBehavior passHref>
+                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                  Portfolio
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/services" legacyBehavior passHref>
+                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                  Our Services
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/career" legacyBehavior passHref>
+                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                  Career
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
 
         {/* Mobile Menu with Shadcn Sheet */}
         <Sheet>
@@ -58,32 +72,38 @@ export default function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right">
-            <div className="flex flex-col gap-6 mt-8">
-              <Link
-                href="/about"
-                className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg"
-              >
-                About Us
-              </Link>
-              <Link
-                href="/portfolio"
-                className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg"
-              >
-                Portfolio
-              </Link>
-              <Link
-                href="/services"
-                className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg"
-              >
-                Our Services
-              </Link>
-              <Link
-                href="/career"
-                className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg"
-              >
-                Career
-              </Link>
-            </div>
+            <NavigationMenu className="flex flex-col" viewport={false}>
+              <NavigationMenuList className="flex-col items-start gap-6 mt-8">
+                <NavigationMenuItem>
+                  <Link href="/about" legacyBehavior passHref>
+                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                      About Us
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/portfolio" legacyBehavior passHref>
+                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                      Portfolio
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/services" legacyBehavior passHref>
+                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                      Our Services
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/career" legacyBehavior passHref>
+                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                      Career
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </SheetContent>
         </Sheet>
       </Container>
