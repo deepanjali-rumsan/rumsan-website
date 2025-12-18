@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/container";
 
 export default function Hero() {
   return (
-    <section className="relative py-8 overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Background decorative squares */}
       {/* Left side */}
       <div className="absolute left-8 bottom-40 w-16 h-16 bg-blue-100 opacity-30 rounded-sm"></div>
@@ -38,11 +38,21 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-blue-600 text-white rounded-2xl font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 text-base">
+            <button
+              className="px-8 py-4 text-white rounded-2xl font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 text-base"
+              style={{ backgroundColor: "#4252FF" }}
+            >
               Talk to our team
               <span>→</span>
             </button>
-            <button className="px-8 py-4 bg-white text-blue-600 border-2 border-blue-600 rounded-2xl font-semibold hover:bg-blue-50 transition-colors text-base">
+            <button
+              className="px-8 py-4 bg-white rounded-2xl font-semibold hover:bg-blue-50 transition-colors text-base"
+              style={{
+                color: "#4252FF",
+                borderWidth: "2px",
+                borderColor: "#4252FF",
+              }}
+            >
               Explore our work
             </button>
           </div>

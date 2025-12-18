@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/container";
 
 export default function CTASection() {
   return (
-    <section className="relative py-22  overflow-hidden">
+    <section className="relative py-20 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -42,8 +42,8 @@ export default function CTASection() {
 
             {/* Sub-text */}
             <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed">
-              Let&apos;s discuss how we can help your organization drive sustainable
-              change and achieve lasting social impact.
+              Let&apos;s discuss how we can help your organization drive
+              sustainable change and achieve lasting social impact.
             </p>
           </motion.div>
 
