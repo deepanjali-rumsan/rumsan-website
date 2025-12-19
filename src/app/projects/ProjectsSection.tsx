@@ -10,21 +10,24 @@ const projects = [
   {
     id: "gigablocks",
     title: "GigaBlocks",
-    description: "We help organizations design responsible, scala...",
+    description:
+      "We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.",
     image:
       "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "plastic-bank",
     title: "Plastic Bank",
-    description: "We help organizations design responsible, scala...",
+    description:
+      "We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.",
     image:
       "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: "unicef",
     title: "UNICEF",
-    description: "We help organizations design responsible, scala...",
+    description:
+      "We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.",
     image:
       "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80",
   },
@@ -32,7 +35,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20 bg-[#FAFAFA]">
+    <section className="py-20" style={{ backgroundColor: "#FDFBF7" }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -66,24 +69,53 @@ export default function ProjectsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-96 md:h-[450px] lg:h-[550px]"
+              className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-90 md:h-[350px] lg:h-[470px]"
             >
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-700 hover:scale-110"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
 
-              <div className="absolute bottom-6 left-6 right-6">
+              {/* Default gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+
+              {/* Hover gradient overlay */}
+              <div
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                style={{
+                  background:
+                    "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                }}
+              ></div>
+
+              {/* Default content (title only) */}
+              <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
                 <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                   {project.title}
                 </h3>
-                <p className="text-white text-sm md:text-base leading-tight">
+                <p className="text-white text-sm md:text-base leading-tight line-clamp-2">
                   {project.description}
                 </p>
+              </div>
+
+              {/* Hover content (full description + Learn more) */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
+                  {project.title}
+                </h3>
+                <p className="text-white text-base md:text-lg leading-relaxed mb-6">
+                  {project.description}
+                </p>
+                <Link
+                  href={`/portfolio/${project.id}`}
+                  className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
+                >
+                  Learn more
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
               </div>
             </motion.div>
           ))}

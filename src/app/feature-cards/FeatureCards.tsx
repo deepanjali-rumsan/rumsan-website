@@ -3,16 +3,16 @@ import { Container } from "@/components/ui/container";
 
 const featureCards = [
   {
-    title: "Innovation",
+    title: "Innovation with Purpose",
     image: "https://assets.rumsan.net/rahat/component-5.png",
   },
   {
-    title: "Human-Centered",
+    title: "Human-Centric Design",
     image:
       "https://assets.rumsan.net/rahat/whatsapp-image-2024-02-28-at-1.29.14-pm-1.jpeg",
   },
   {
-    title: "Impact",
+    title: "Impact First",
     image: "https://assets.rumsan.net/rahat/component-8.png",
   },
 ];
