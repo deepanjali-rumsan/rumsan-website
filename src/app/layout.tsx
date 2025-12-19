@@ -18,7 +18,7 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Rumsan - Impact Innovation Company | Blockchain & AI Solutions",
+    default: "Rumsan",
     template: "%s | Rumsan",
   },
   description:
