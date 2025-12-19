@@ -238,7 +238,7 @@ export default function ServicesSection() {
                             key={imgIndex}
                             className="group relative aspect-[4/3] overflow-hidden rounded-xl shadow-lg"
                             style={{
-                              width: "412px",
+                              width: "auto",
                               height: "270px",
                               opacity: imageOpacity,
                               transform: `translateX(${imageTranslateX}px)`,
@@ -272,4 +272,3 @@ export default function ServicesSection() {
     </div>
   );
 }
-

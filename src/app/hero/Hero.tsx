@@ -1,33 +1,42 @@
+"use client";
+
 import { Container } from "@/components/ui/container";
+import { WordRotate } from "@/components/ui/word-rotate";
+import DecorativeSquares from "./DecorativeSquares";
 
 export default function Hero() {
+  const slogans = [
+    <>
+      Bridging Yesterday&apos;s Problems With{" "}
+      <span className="text-gray-500">Tomorrow&apos;s Solution</span>
+    </>,
+    <>
+      Rumsan Is An <br />
+      Impact{" "}
+      <span className="text-gray-500">
+        Innovation
+        <br />
+        Company
+      </span>
+    </>,
+  ];
+
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background decorative squares */}
-      {/* Left side */}
-      <div className="absolute left-8 bottom-40 w-16 h-16 bg-blue-100 opacity-30 rounded-sm"></div>
-      <div className="absolute left-16 bottom-20 w-20 h-20 border-2 border-blue-200 opacity-40 rounded-sm"></div>
-      <div className="absolute left-4 bottom-64 w-8 h-8 bg-blue-200 opacity-50 rounded-sm"></div>
-      <div className="absolute left-32 bottom-52 w-12 h-12 border-2 border-blue-100 opacity-30 rounded-sm"></div>
-
-      {/* Right side */}
-      <div className="absolute right-8 bottom-32 w-24 h-24 border-2 border-blue-200 opacity-40 rounded-sm"></div>
-      <div className="absolute right-24 bottom-16 w-16 h-16 bg-blue-100 opacity-35 rounded-sm"></div>
-      <div className="absolute right-12 bottom-56 w-10 h-10 bg-blue-200 opacity-45 rounded-sm"></div>
-      <div className="absolute right-40 bottom-40 w-14 h-14 border-2 border-blue-100 opacity-35 rounded-sm"></div>
-      <div className="absolute right-6 bottom-72 w-6 h-6 bg-blue-300 opacity-60 rounded-sm"></div>
+      <DecorativeSquares />
 
       <Container>
         <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <h1 className="leading-tight mb-8 relative">
-            <span className="block" style={{ color: "#4252FF" }}>
-              Bridging Yesterday&apos;s
-            </span>
-            <span className="block" style={{ color: "#4252FF" }}>
-              Problems With
-            </span>
-            <span className="text-gray-600 block">
-              Tomorrow&apos;s Solution
+          <h1 className="leading-tight mb-8 relative min-h-[200px] md:min-h-[240px] lg:min-h-[280px] flex items-center justify-center">
+            <span
+              className="block text-4xl md:text-5xl lg:text-6xl font-bold"
+              style={{ color: "#4252FF" }}
+            >
+              <WordRotate
+                words={slogans}
+                duration={5000}
+                className="inline-block"
+              />
             </span>
           </h1>
 

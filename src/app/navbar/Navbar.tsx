@@ -13,6 +13,11 @@ import {
   NavigationMenuLink,
 } from "@/components/ui/navigation-menu";
 
+const navLinkClasses =
+  "text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent";
+const mobileNavLinkClasses =
+  "text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent";
+
 export default function Navbar() {
   return (
     <nav className="w-full py-6 bg-white">
@@ -34,28 +39,28 @@ export default function Navbar() {
           <NavigationMenuList className="gap-6">
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                <NavigationMenuLink className={navLinkClasses}>
                   About Us
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/portfolio" legacyBehavior passHref>
-                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                <NavigationMenuLink className={navLinkClasses}>
                   Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/services" legacyBehavior passHref>
-                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                <NavigationMenuLink className={navLinkClasses}>
                   Our Services
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/career" legacyBehavior passHref>
-                <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                <NavigationMenuLink className={navLinkClasses}>
                   Career
                 </NavigationMenuLink>
               </Link>
@@ -76,28 +81,28 @@ export default function Navbar() {
               <NavigationMenuList className="flex-col items-start gap-6 mt-8">
                 <NavigationMenuItem>
                   <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
                       About Us
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/portfolio" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
                       Portfolio
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/services" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
                       Our Services
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link href="/career" legacyBehavior passHref>
-                    <NavigationMenuLink className="text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent">
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
                       Career
                     </NavigationMenuLink>
                   </Link>
