@@ -11,9 +11,9 @@ export default function GivingBackSection() {
         <Container>
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
-            <p className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">
+            <h5 className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">
               GIVING BACK
-            </p>
+            </h5>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span style={{ color: "#4252FF" }}>
                 At Rumsan, Impact Isn&apos;t Just Something We Build For Our
@@ -83,7 +83,7 @@ export default function GivingBackSection() {
               {/* Statistics Grid */}
               <div className="grid grid-cols-2 gap-4 md:gap-3">
                 {/* Stat 1 */}
-                <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#cf3d3c" }}
@@ -109,7 +109,7 @@ export default function GivingBackSection() {
                 </div>
 
                 {/* Stat 3 */}
-                <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#cf3d3c" }}
@@ -122,7 +122,7 @@ export default function GivingBackSection() {
                 </div>
 
                 {/* Stat 4 */}
-                <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#cf3d3c" }}
@@ -161,9 +161,10 @@ export default function GivingBackSection() {
               </Link>
 
               {/* Main Title */}
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Building Nepal&apos;s Web3 Community Together
-              </h2>
+              <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                Building Nepal&apos;s Web3
+                <span style={{ color: "#a8116a" }}> Community Together</span>
+              </h4>
 
               {/* Description */}
               <p className="text-base md:text-lg text-gray-600 leading-relaxed">
@@ -189,7 +190,7 @@ export default function GivingBackSection() {
               {/* Statistics Grid */}
               <div className="grid grid-cols-2 gap-4 md:gap-6 mt-8">
                 {/* Stat 1 */}
-                <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#a8116a" }}
@@ -202,7 +203,7 @@ export default function GivingBackSection() {
                 </div>
 
                 {/* Stat 2 */}
-                <div className="bg-white rounded-xl p-6 shadow-md">
+                <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#a8116a" }}
@@ -215,7 +216,7 @@ export default function GivingBackSection() {
                 </div>
 
                 {/* Stat 3 */}
-                <div className="bg-white rounded-xl p-6 shadow-md col-span-2">
+                <div className="bg-white rounded-xl p-6 shadow-md col-span-2 text-center">
                   <h4
                     className="text-3xl md:text-4xl font-bold mb-2"
                     style={{ color: "#a8116a" }}
