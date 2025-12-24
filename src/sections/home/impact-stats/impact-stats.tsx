@@ -3,8 +3,8 @@ import { statsData } from "./impact-data";
 
 export const ImpactStats = () => {
   return (
-    <section className="py-20 px-4 ">
-      <div className="max-w-8xl mx-auto">
+    <section className="py-20">
+      <div>
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-2">
@@ -25,10 +25,3 @@ export const ImpactStats = () => {
     </section>
   );
 };
-
-
-
-
-
-
-

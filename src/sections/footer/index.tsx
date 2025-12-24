@@ -11,7 +11,7 @@ export default function Footer() {
       {/* Upper Section - Main Footer Content */}
       <div className="py-10">
         <Container>
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6 lg:gap-6 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6 lg:gap-6 items-start">
             {/* Rumsan (About Section) */}
             <div className="lg:col-span-1 flex flex-col">
               <div className="flex items-center gap-3 mb-6">

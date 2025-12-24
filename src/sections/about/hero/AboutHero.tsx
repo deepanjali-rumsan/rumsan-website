@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative h-[500px] md:h-[500px] lg:h-[500px] -mt-6">
+    <section className="relative h-[500px] md:h-[500px] lg:h-[500px]">
       <Image
         src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
         alt="Rumsan Team"
