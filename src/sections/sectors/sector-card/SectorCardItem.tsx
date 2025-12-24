@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-interface ServiceCardItemProps {
+interface SectorCardItemProps {
   number: string;
   title: string;
   subtitle: string;
@@ -14,7 +14,7 @@ interface ServiceCardItemProps {
   imagePosition?: "left" | "right";
 }
 
-export default function ServiceCardItem({
+export default function SectorCardItem({
   number,
   title,
   subtitle,
@@ -22,7 +22,7 @@ export default function ServiceCardItem({
   imageUrl,
   imageAlt,
   imagePosition = "right",
-}: ServiceCardItemProps) {
+}: SectorCardItemProps) {
   const isImageLeft = imagePosition === "left";
 
   return (

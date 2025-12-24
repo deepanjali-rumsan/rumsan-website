@@ -37,10 +37,7 @@ export default function Hero() {
                 }}
               />
             </div>
-            <span
-              className="block text-4xl md:text-5xl lg:text-6xl font-bold relative z-10"
-              style={{ color: "#4252FF" }}
-            >
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold relative z-10 text-[#4252FF]">
               <WordRotate
                 words={slogans}
                 duration={5000}

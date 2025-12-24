@@ -59,9 +59,23 @@ export default function Navbar() {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link href="/sectors" legacyBehavior passHref>
+                <NavigationMenuLink className={navLinkClasses}>
+                  Our Sectors
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/career" legacyBehavior passHref>
                 <NavigationMenuLink className={navLinkClasses}>
                   Career
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <Link href="/contact" legacyBehavior passHref>
+                <NavigationMenuLink className={navLinkClasses}>
+                  Contact Us
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
@@ -101,9 +115,23 @@ export default function Navbar() {
                   </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
+                  <Link href="/sectors" legacyBehavior passHref>
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                      Our Sectors
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
                   <Link href="/career" legacyBehavior passHref>
                     <NavigationMenuLink className={mobileNavLinkClasses}>
                       Career
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <Link href="/contact" legacyBehavior passHref>
+                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                      Contact Us
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
