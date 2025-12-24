@@ -28,8 +28,17 @@ export default function Hero() {
       <Container>
         <div className="max-w-4xl mx-auto relative z-10 text-center">
           <h1 className="leading-tight mb-8 relative min-h-[200px] md:min-h-[240px] lg:min-h-[280px] flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div
+                className="w-[120%] h-[120%] rounded-full blur-3xl opacity-30"
+                style={{
+                  background:
+                    "radial-gradient(circle, rgba(78, 85, 288, 0.3) 0%, rgba(66, 82, 255, 0.3) 40%, transparent 70%)",
+                }}
+              />
+            </div>
             <span
-              className="block text-4xl md:text-5xl lg:text-6xl font-bold"
+              className="block text-4xl md:text-5xl lg:text-6xl font-bold relative z-10"
               style={{ color: "#4252FF" }}
             >
               <WordRotate

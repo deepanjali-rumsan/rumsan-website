@@ -26,7 +26,11 @@ export default function FeatureCards() {
             <div
               key={card.title}
               className={`relative overflow-hidden transition-transform duration-500 hover:-translate-y-1 ${
-                index === 1 ? "h-48 md:h-52 lg:h-60" : "h-56 md:h-64 lg:h-72"
+                index === 1
+                  ? "h-48 md:h-52 lg:h-60"
+                  : index === 2
+                  ? "h-64 md:h-72 lg:h-80"
+                  : "h-56 md:h-64 lg:h-72"
               }`}
               style={{
                 borderRadius: "28px",
