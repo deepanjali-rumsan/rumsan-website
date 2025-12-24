@@ -16,10 +16,7 @@ export default function OurValuesSection() {
           <p className=" text-gray-600 text-lg md:text-base font-medium tracking-widest uppercase mb-3">
             OUR VALUES
           </p>
-          <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
-            style={{ color: "#4252FF" }}
-          >
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#4252FF]">
             What Drives Us
             <span className="text-gray-500"> Forward</span>
           </h2>
@@ -29,10 +26,7 @@ export default function OurValuesSection() {
           {/* Card 1: Impact First */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Target
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <Target className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Impact First
@@ -46,10 +40,7 @@ export default function OurValuesSection() {
           {/* Card 2: Ethics by Design */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Scale
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <Scale className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Ethics by Design
@@ -63,10 +54,7 @@ export default function OurValuesSection() {
           {/* Card 3: Innovation with Purpose */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Lightbulb
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <Lightbulb className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Innovation with Purpose
@@ -80,10 +68,7 @@ export default function OurValuesSection() {
           {/* Card 4: Collaboration Over Silos */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Network
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <Network className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Collaboration Over Silos
@@ -97,10 +82,7 @@ export default function OurValuesSection() {
           {/* Card 5: Reliability & Trust */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <ShieldCheck
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Reliability & Trust
@@ -114,10 +96,7 @@ export default function OurValuesSection() {
           {/* Card 6: Human-Centered Technology */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Users
-                className="w-10 h-10 md:w-12 md:h-12"
-                style={{ color: "#f97316" }}
-              />
+              <Users className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Human-Centered Technology

@@ -14,10 +14,7 @@ export default function MissionVisionSection() {
                 Mission
               </h2>
             </div>
-            <p
-              className="text-2xl md:text-3xl font-bold leading-tight"
-              style={{ color: "#4252FF" }}
-            >
+            <p className="text-2xl md:text-3xl font-bold leading-tight text-[#4252FF]">
               Design and deploy frontier technologies
             </p>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">
@@ -48,10 +45,7 @@ export default function MissionVisionSection() {
                 Vision
               </h2>
             </div>
-            <p
-              className="text-2xl md:text-3xl font-bold leading-tight"
-              style={{ color: "#4252FF" }}
-            >
+            <p className="text-2xl md:text-3xl font-bold leading-tight text-[#4252FF]">
               Power resilient and equitable societies
             </p>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">

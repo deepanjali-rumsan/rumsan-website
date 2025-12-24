@@ -64,6 +64,26 @@ export const servicesData: ServiceData[] = [
     imageAlt: "AI and data analytics visualization",
     imagePosition: "right",
   },
+  {
+    number: "4",
+    title: "Global Delivery And Team Augmentation",
+    subtitle: "Extend Your Capacity With Dedicated Engineering, Design, And Product Teams.",
+    description:
+      "We provide skilled, cross-functional teams that integrate seamlessly into your workflow —helping you deliver faster, reduce costs, and scale efficiently. Our global delivery model gives you access to experienced developers, designers, analysts, and product experts with deep knowledge of Web, Mobile, Blockchain, and AI. Whether you need a long-term team or flexible project-based support, we ensure reliable, high-quality delivery.",
+    tags: [
+      "Dedicated engineering teams",
+      "Design & UX teams",
+      "Product management & strategy",
+      "Full-stack development (Web & Mobile)",
+      "Blockchain & Web3 development",
+      "AI/ML engineering & integration",
+      "Quality assurance & testing",
+      "DevOps & cloud infrastructure",
+    ],
+    imageUrl: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80",
+    imageAlt: "Global delivery and team augmentation",
+    imagePosition: "left",
+  },
 ];
 
 
