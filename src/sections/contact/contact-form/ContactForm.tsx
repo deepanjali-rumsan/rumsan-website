@@ -1,9 +1,66 @@
 "use client";
 
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
+import {
+  contactFormSchema,
+  type ContactFormData,
+} from "@/src/lib/validations/contact-form";
 
 export default function ContactForm() {
+  const [isLoading, setIsLoading] = useState(false);
+  const [serverState, setServerState] = useState<{
+    submitting: boolean;
+    status: { ok: boolean; msg: string } | null;
+  }>({
+    submitting: false,
+    status: null,
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    mode: "onChange",
+  });
+
+  const handleServerResponse = (ok: boolean, msg: string) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg },
+    });
+    if (ok) {
+      reset();
+    }
+  };
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsLoading(true);
+    setServerState({ submitting: true, status: null });
+
+    const formData = { ...data, formName: "contactForm" };
+
+    try {
+      const response = await axios.post("/api/form", formData);
+      setIsLoading(false);
+      handleServerResponse(true, response.data.message || "Thanks! for being with us");
+    } catch (err) {
+      setIsLoading(false);
+      const errorMessage =
+        axios.isAxiosError(err) && err.response?.data?.error
+          ? err.response.data.error
+          : "Failed to send message. Please try again.";
+      handleServerResponse(false, errorMessage);
+    }
+  };
+
   return (
     <section className="py-20">
       <Container>
@@ -20,61 +77,107 @@ export default function ContactForm() {
               away.
             </p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="contactName"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Your Full Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors"
+                  id="contactName"
+                  {...register("contactName")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                    errors.contactName
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your full name"
                 />
+                {errors.contactName && (
+                  <p className="mt-1 text-sm text-red-500">
+                    {errors.contactName.message}
+                  </p>
+                )}
               </div>
 
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="contactEmail"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Email Address
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors"
+                  id="contactEmail"
+                  {...register("contactEmail")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                    errors.contactEmail
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your email address"
                 />
+                {errors.contactEmail && (
+                  <p className="mt-1 text-sm text-red-500">
+                    {errors.contactEmail.message}
+                  </p>
+                )}
               </div>
 
               <div>
                 <label
-                  htmlFor="message"
+                  htmlFor="contactMessage"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Your Message
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
+                  id="contactMessage"
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors resize-none"
+                  {...register("contactMessage")}
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors resize-none ${
+                    errors.contactMessage
+                      ? "border-red-500"
+                      : "border-gray-300"
+                  }`}
                   placeholder="Enter your message"
                 />
+                {errors.contactMessage && (
+                  <p className="mt-1 text-sm text-red-500">
+                    {errors.contactMessage.message}
+                  </p>
+                )}
               </div>
+
+              {isLoading && (
+                <div className="flex justify-center">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#4252FF]"></div>
+                </div>
+              )}
 
               <Button
                 type="submit"
-                className="w-full bg-[#4252FF] hover:bg-[#4252FF]/90 text-white font-semibold py-3 rounded-lg transition-colors"
+                disabled={isLoading || serverState.submitting}
+                className="w-full bg-[#4252FF] hover:bg-[#4252FF]/90 text-white font-semibold py-3 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Send Message
+                {isLoading ? "Sending..." : "Send Message"}
               </Button>
+
+              {serverState.status && (
+                <p
+                  className={`mt-4 text-sm font-medium ${
+                    !serverState.status.ok
+                      ? "text-red-500"
+                      : "text-green-600"
+                  }`}
+                >
+                  {serverState.status.msg}
+                </p>
+              )}
             </form>
           </div>
 
@@ -162,4 +265,5 @@ export default function ContactForm() {
     </section>
   );
 }
+
 

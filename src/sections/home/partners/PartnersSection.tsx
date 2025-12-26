@@ -5,67 +5,6 @@ import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Container } from "@/components/ui/container";
 
-const partners = [
-  {
-    id: "gsma",
-    title: "GSMA",
-    logo: "https://assets.rumsan.net/rahat/gsma-rahat-funder.png",
-  },
-  {
-    id: "crescent",
-    title: "Crescent Enterprises",
-    logo: "https://assets.rumsan.net/rumsan-group/cresent-enterprises-award.png",
-  },
-  {
-    id: "stellar",
-    title: "Stellar",
-    logo: "https://assets.rumsan.net/rumsan-group/stellar-logo.png",
-  },
-  {
-    id: "circle",
-    title: "Circle Impact",
-    logo: "https://assets.rumsan.net/rumsan-group/circle-rahat-partner.png",
-  },
-  {
-    id: "gsr",
-    title: "GSR Foundation",
-    logo: "https://assets.rumsan.net/rumsan-group/partners-gsr-foundation.png",
-  },
-  {
-    id: "google",
-    title: "Google Startups for Sustainable Development",
-    logo: "https://assets.rumsan.net/rumsan-group/partners-google-startup-png.png",
-  },
-  {
-    id: "red-cross",
-    title: "Danish Red Cross",
-    logo: "https://assets.rumsan.net/rumsan-group/danish-redcross-logo-removebg-preview.png",
-  },
-  {
-    id: "mercy-corps",
-    title: "Mercy Corps",
-    logo: "https://assets.rumsan.net/rahat/mercy-corps-partners-rahat.png",
-  },
-  {
-    id: "unicef",
-    title: "UNICEF",
-    logo: "https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/unicef-fec-final.jpg",
-  },
-  {
-    id: "villagecapital",
-    title: "Village Capital",
-    logo: "https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/village-capital-collab-logo.png",
-  },
-  {
-    id: "mit-solve",
-    title: "MIT Solve",
-    logo: "https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/mit-solve-logo-home-page.png",
-  },
-];
-
-// Split partners into two groups
-const partnersFirst = partners.slice(0, 6);
-const partnersSecond = partners.slice(6);
 
 export default function PartnersSection() {
   return (
@@ -85,20 +24,71 @@ export default function PartnersSection() {
             durationOnHover={50}
             className="py-8"
           >
-            {partnersFirst.map((partner) => (
-              <div
-                key={partner.id}
-                className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]"
-              >
-                <Image
-                  src={partner.logo}
-                  alt={partner.title}
-                  width={200}
-                  height={150}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+            {/* GSMA */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/gsma-rahat-funder.png"
+                alt="GSMA"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Crescent Enterprises */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/cresent-enterprises-award.png"
+                alt="Crescent Enterprises"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Stellar */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/stellar-logo.png"
+                alt="Stellar"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Circle Impact */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/circle-rahat-partner.png"
+                alt="Circle Impact"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* GSR Foundation */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/partners-gsr-foundation.png"
+                alt="GSR Foundation"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Google Startups for Sustainable Development */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/partners-google-startup-png.png"
+                alt="Google Startups for Sustainable Development"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
           </InfiniteSlider>
 
           {/* Second Slider */}
@@ -109,20 +99,60 @@ export default function PartnersSection() {
             className="py-8"
             reverse
           >
-            {partnersSecond.map((partner) => (
-              <div
-                key={partner.id}
-                className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]"
-              >
-                <Image
-                  src={partner.logo}
-                  alt={partner.title}
-                  width={200}
-                  height={150}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+            {/* Danish Red Cross */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rumsan-group/danish-redcross-logo-removebg-preview.png"
+                alt="Danish Red Cross"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Mercy Corps */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/mercy-corps-partners-rahat.png"
+                alt="Mercy Corps"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* UNICEF */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/esatya/unicef-fec-final.jpg"
+                alt="UNICEF"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* Village Capital */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/village-capital-collab-logo.png"
+                alt="Village Capital"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* MIT Solve */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/mit-solve-logo-home-page.png"
+                alt="MIT Solve"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
           </InfiniteSlider>
         </motion.div>
       </Container>
