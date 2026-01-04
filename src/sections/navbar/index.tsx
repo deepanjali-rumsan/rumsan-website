@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <NavigationMenu className="hidden md:flex" viewport={false}>
+        <NavigationMenu className="hidden lg:flex" viewport={false}>
           <NavigationMenuList className="gap-6">
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
@@ -84,7 +84,7 @@ export default function Navbar() {
 
         {/* Mobile Menu with Shadcn Sheet */}
         <Sheet>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <Button variant="ghost" size="icon">
               <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle menu</span>

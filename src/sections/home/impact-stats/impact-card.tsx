@@ -32,9 +32,9 @@ export const StatCard = ({
 
       {/* Default Overlay */}
       {isHighlight ? (
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/80 via-blue-500/80 to-purple-600/80 transition-opacity duration-500 group-hover:opacity-0" />
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/50 via-blue-500/50 to-purple-600/50  transition-opacity duration-500 group-hover:opacity-0" />
       ) : (
-        <div className="absolute inset-0 bg-gray-900/70 transition-opacity duration-500 group-hover:opacity-0" />
+        <div className="absolute inset-0 bg-gray-900/50 transition-opacity duration-500 group-hover:opacity-0" />
       )}
 
       {/* Hover gradient overlay */}

@@ -3,7 +3,7 @@ import { Folder, Globe, Users, Heart, Github } from "lucide-react";
 
 export const ImpactStats = () => {
   return (
-    <section className="py-20">
+    <section>
       <div>
         {/* Heading */}
         <div className="text-center mb-16">
@@ -22,7 +22,7 @@ export const ImpactStats = () => {
             icon={<Folder className="w-12 h-12" strokeWidth={1.5} />}
             number="10"
             label="Projects Deployed"
-            image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+            image="https://assets.rumsan.net/rahat/dsc-1801.jpg"
             height="259px"
           />
 
@@ -31,7 +31,7 @@ export const ImpactStats = () => {
             icon={<Globe className="w-12 h-12" strokeWidth={1.5} />}
             number="45"
             label="Countries Across Asia & Africa"
-            image="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80"
+            image="https://assets.rumsan.net/rahat/b4d943398fb0fda5ee391a0f251b285818543545.jpg"
             height="307px"
           />
 
@@ -40,7 +40,7 @@ export const ImpactStats = () => {
             icon={<Users className="w-12 h-12" strokeWidth={1.5} />}
             number="1M+"
             label="Lives Impacted"
-            image="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+            image="https://assets.rumsan.net/rahat/0e086dcedcfc654fd9c69b52aa2425bd655242a9.jpg"
             height="355px"
             isHighlight={true}
           />
@@ -59,7 +59,7 @@ export const ImpactStats = () => {
             icon={<Github className="w-12 h-12" strokeWidth={1.5} />}
             number="45,000+"
             label="Github Commit"
-            image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+            image="https://assets.rumsan.net/rahat/1d2d3ff5f6c5b6a6aa82d6b7b7104719f3b6e6d2.jpg"
             height="259px"
           />
         </div>

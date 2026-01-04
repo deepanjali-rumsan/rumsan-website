@@ -46,8 +46,8 @@ export default function OurValuesSection() {
               Ethics by Design
             </h5>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              Our solutions prioritize transparency, privacy, and
-              accountability from day one.
+              Our solutions prioritize transparency, privacy, and accountability
+              from day one.
             </p>
           </div>
 
@@ -74,8 +74,8 @@ export default function OurValuesSection() {
               Collaboration Over Silos
             </h5>
             <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-              We co-create with governments, global agencies, and communities
-              to ensure solutions are inclusive and implementable.
+              We co-create with governments, global agencies, and communities to
+              ensure solutions are inclusive and implementable.
             </p>
           </div>
 
@@ -111,4 +111,3 @@ export default function OurValuesSection() {
     </section>
   );
 }
-

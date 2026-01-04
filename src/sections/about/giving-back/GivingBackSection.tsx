@@ -7,7 +7,7 @@ export default function GivingBackSection() {
   return (
     <>
       {/* Hamro LifeBank Section */}
-      <section className="py-20" style={{ backgroundColor: "#FDFBF7" }}>
+      <section className="pt-20 pb-10" style={{ backgroundColor: "#FDFBF7" }}>
         <Container>
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -128,7 +128,7 @@ export default function GivingBackSection() {
       </section>
 
       {/* eSatya Section */}
-      <section className="py-20" style={{ backgroundColor: "#FDFBF7" }}>
+      <section className="pt-10 pb-20" style={{ backgroundColor: "#FDFBF7" }}>
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* Left Column - Content */}

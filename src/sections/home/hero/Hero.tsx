@@ -3,13 +3,17 @@
 import { Container } from "@/components/ui/container";
 import { WordRotate } from "@/components/ui/word-rotate";
 import DecorativeSquares from "./DecorativeSquares";
+import Link from "next/link";
 
 export default function Hero() {
-  const slogans = [
+  const firstSlogan = (
     <>
       Bridging Yesterday&apos;s Problems With{" "}
       <span className="text-gray-500">Tomorrow&apos;s Solution</span>
-    </>,
+    </>
+  );
+
+  const secondSlogan = (
     <>
       Rumsan Is An <br />
       Impact{" "}
@@ -18,8 +22,8 @@ export default function Hero() {
         <br />
         Company
       </span>
-    </>,
-  ];
+    </>
+  );
 
   return (
     <section className="relative py-20 overflow-hidden">
@@ -39,7 +43,7 @@ export default function Hero() {
             </div>
             <span className="block text-4xl md:text-5xl lg:text-6xl font-bold relative z-10 text-[#4252FF]">
               <WordRotate
-                words={slogans}
+                words={[firstSlogan, secondSlogan]}
                 duration={5000}
                 className="inline-block"
               />
@@ -53,21 +57,14 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              className="px-8 py-4 text-white rounded-2xl font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 text-base"
-              style={{ backgroundColor: "#4252FF" }}
+            <Link
+              href="/contact"
+              className="px-8 py-4 text-white rounded-2xl bg-[#4252FF] font-semibold hover:opacity-90 transition-all cursor-pointer flex items-center justify-center gap-2 text-base"
             >
               Talk to our team
               <span>→</span>
-            </button>
-            <button
-              className="px-8 py-4 bg-white rounded-2xl font-semibold hover:bg-blue-50 transition-colors text-base"
-              style={{
-                color: "#4252FF",
-                borderWidth: "2px",
-                borderColor: "#4252FF",
-              }}
-            >
+            </Link>
+            <button className="px-8 py-4 bg-white text-[#4252FF] rounded-2xl border-2 border-[#4252FF] font-semibold hover:bg-blue-50 transition-colors text-base cursor-pointer">
               Explore our work
             </button>
           </div>
