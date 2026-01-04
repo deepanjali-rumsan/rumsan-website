@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { Container } from "@/components/ui/container";
 
-
 export default function PartnersSection() {
   return (
     <section>
@@ -42,7 +41,7 @@ export default function PartnersSection() {
                 alt="Crescent Enterprises"
                 width={200}
                 height={150}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-cover"
               />
             </div>
 
@@ -53,7 +52,7 @@ export default function PartnersSection() {
                 alt="Stellar"
                 width={200}
                 height={150}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-cover"
               />
             </div>
 
@@ -75,7 +74,7 @@ export default function PartnersSection() {
                 alt="GSR Foundation"
                 width={200}
                 height={150}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-full max-h-full object-cover"
               />
             </div>
 
@@ -148,6 +147,39 @@ export default function PartnersSection() {
               <Image
                 src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/mit-solve-logo-home-page.png"
                 alt="MIT Solve"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* New Partner 1 */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/a7c0b4eb394b74531427bc98c1e3358a4d77c1cf.png"
+                alt="Partner"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* New Partner 2 */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/4dff10d018a5eef08ada279e539f6125e653f251.png"
+                alt="Partner"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            {/* New Partner 3 */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/33b27c28e6830817cb9e8dbf7cc752a816b85d5f.png"
+                alt="Partner"
                 width={200}
                 height={150}
                 className="max-w-full max-h-full object-contain"

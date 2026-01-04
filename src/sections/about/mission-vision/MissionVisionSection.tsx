@@ -1,11 +1,11 @@
 import { Container } from "@/components/ui/container";
-import { Lightbulb } from "lucide-react";
+import Image from "next/image";
 
 export default function MissionVisionSection() {
   return (
     <section className="py-20">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16 items-center">
           {/* Mission Column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -25,14 +25,16 @@ export default function MissionVisionSection() {
 
           {/* Center Graphic */}
           <div className="hidden md:flex items-center justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              {/* Outer ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-gray-200"></div>
-              {/* Inner circle */}
-              <div className="absolute inset-8 rounded-full bg-gray-100 border-2 border-b-orange-300"></div>
-              {/* Center circle with lightbulb */}
-              <div className="absolute inset-16 rounded-full  bg-white border-2 border-b-orange-300 flex items-center justify-center">
-                <Lightbulb className="w-12 h-12 md:w-16 md:h-16 text-yellow-600" />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+              {/* Center circle with lightbulb and shadow */}
+              <div className="rounded-full bg-white border-2 shadow-lg flex items-center justify-center w-32 h-32 md:w-40 md:h-40">
+                <Image
+                  src="https://assets.rumsan.net/rahat/ebe22fc623ea0dd7e90f61b9059a291f536d4abd.png"
+                  alt="Lightbulb"
+                  width={64}
+                  height={64}
+                  className="w-12 h-12 md:w-16 md:h-16"
+                />
               </div>
             </div>
           </div>
@@ -58,4 +60,3 @@ export default function MissionVisionSection() {
     </section>
   );
 }
-

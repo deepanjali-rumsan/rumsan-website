@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/container";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#263278] text-white">
+    <footer className="bg-[#253E93] text-white">
       {/* Upper Section - Main Footer Content */}
       <div className="py-10">
         <Container>
@@ -202,7 +202,7 @@ export default function Footer() {
       </div>
 
       {/* Lower Section - Social Media */}
-      <div className="border-t border-gray-700/50">
+      <div className="border-t bg-[#20357E] border-gray-700/50">
         <div className="py-8">
           <Container>
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
