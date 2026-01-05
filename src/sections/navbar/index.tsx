@@ -20,7 +20,7 @@ const mobileNavLinkClasses =
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-white">
+    <nav className=" sticky top-0 z-50 w-full bg-white">
       <Container className="flex items-center justify-between">
         <div>
           <Link href="/">
