@@ -13,9 +13,9 @@ export default function OurValuesSection() {
     <section className="py-20">
       <Container>
         <div className="mb-12 md:mb-16 text-center">
-          <p className=" text-gray-600 text-lg md:text-base font-medium tracking-widest uppercase mb-3">
+          <h5 className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">
             OUR VALUES
-          </p>
+          </h5>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#4252FF]">
             What Drives Us
             <span className="text-gray-500"> Forward</span>
