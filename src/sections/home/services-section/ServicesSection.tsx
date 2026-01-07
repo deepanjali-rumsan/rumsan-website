@@ -84,11 +84,11 @@ export function WhatWeDo() {
               </div>
             </div>
 
-            <div className="absolute right-0 top-[60%] z-20 w-80 hidden lg:flex flex-col items-end">
+            <div className="absolute right-0 top-[60%] z-20 w-96 hidden lg:flex flex-col items-end">
               <div className="flex flex-col gap-3">
                 <button
                   onClick={() => scrollToSection("services")}
-                  className={`flex items-center justify-between rounded-s-lg px-8 py-3.5 text-left text-base font-medium transition-all ${
+                  className={`flex items-center justify-between rounded-s-lg px-10 py-4 text-left text-base font-medium transition-all ${
                     activeTab === "services"
                       ? "bg-white text-slate-900 shadow-lg hover:bg-gray-50"
                       : "bg-slate-700/50 text-white backdrop-blur-sm hover:bg-slate-600/50"
@@ -101,7 +101,7 @@ export function WhatWeDo() {
                 </button>
                 <button
                   onClick={() => scrollToSection("sectors")}
-                  className={`flex items-center justify-between rounded-s-lg px-8 py-3.5 text-left text-base font-medium transition-all ${
+                  className={`flex items-center justify-between rounded-s-lg px-10 py-4 text-left text-base font-medium transition-all ${
                     activeTab === "sectors"
                       ? "bg-white text-slate-900 shadow-lg hover:bg-gray-50"
                       : "bg-slate-700/50 text-white backdrop-blur-sm hover:bg-slate-600/50"
@@ -122,7 +122,7 @@ export function WhatWeDo() {
           {/* Services Section */}
           <div
             ref={servicesRef}
-            className="min-h-screen px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-16 xl:py-10"
+            className=" px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-16 xl:py-10"
           >
             <h5 className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">
               WHAT WE DO
@@ -309,7 +309,7 @@ export function WhatWeDo() {
           {/* Sectors Section */}
           <div
             ref={sectorsRef}
-            className="min-h-screen px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-16 xl:py-5"
+            className=" px-4 py-8 sm:px-6 sm:py-5 md:px-8 md:py-5 lg:px-12 lg:py-5 xl:px-16 xl:py-5"
           >
             <div className="mb-6 sm:mb-8 md:mb-10">
               <h2 className="mb-3 flex items-center gap-2 text-xl font-semibold text-[#4252FF] sm:text-2xl">
