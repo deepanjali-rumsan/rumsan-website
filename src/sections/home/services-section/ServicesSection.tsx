@@ -140,13 +140,13 @@ export function WhatWeDo() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:gap-2 md:grid-cols-2 md:gap-4 lg:gap-4">
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/b76aa1d121680c01de1fec6d7ef566cec77f9da5.jpg"
                     alt="Strategy & Innovation Advisory"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -181,13 +181,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/933a9ae47def7afda0989236b403a7e7f5365812.jpg"
                     alt="Blockchain & Web3 Solutions"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -222,13 +222,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58   sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/3bf29d55d19cc3cf21ce134a843025220414d5be.jpg"
                     alt="Artificial Intelligence & Automation"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -263,13 +263,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/bb6aa67663eb67ecebbbba2e1d4705934a6d85a3.jpg"
                     alt="Global Delivery & Team Augmentation"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -324,13 +324,13 @@ export function WhatWeDo() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:gap-2 md:grid-cols-2 md:gap-4 lg:gap-4">
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rumsan-group/dsc-1842.jpg"
                     alt="Financial Services"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -365,13 +365,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/dsc-1799.jpg"
                     alt="Healthcare & Life Sciences"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -406,13 +406,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/img-5518.jpg"
                     alt="Education & Public Sector"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
@@ -447,13 +447,13 @@ export function WhatWeDo() {
                 </div>
               </Card>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-2 relative rounded-2xl">
+              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
                 <div className="relative w-full h-58 sm:h-56 md:h-64">
                   <Image
                     src="https://assets.rumsan.net/rahat/b76aa1d121680c01de1fec6d7ef566cec77f9da5.jpg"
                     alt="Retail & Consumer Goods"
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Default gradient overlay */}
