@@ -8,7 +8,7 @@ import { Container } from "@/components/ui/container";
 
 export default function CTASection() {
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-10 overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

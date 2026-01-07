@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/container";
 
 export default function ProjectsSection() {
   return (
-    <section className="py-20" style={{ backgroundColor: "#FDFBF7" }}>
+    <section className="py-10" style={{ backgroundColor: "#FDFBF7" }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

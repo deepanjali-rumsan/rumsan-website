@@ -10,7 +10,7 @@ import {
 
 export default function OurValuesSection() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="mb-12 md:mb-16 text-center">
           <h5 className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">

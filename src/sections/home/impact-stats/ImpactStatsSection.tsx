@@ -5,7 +5,7 @@ import { ImpactStats } from "./impact-stats";
 
 export default function ImpactStatsSection() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <ImpactStats />
       </Container>

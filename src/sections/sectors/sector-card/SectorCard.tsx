@@ -5,7 +5,7 @@ import SectorCardItem from "./SectorCardItem";
 
 export default function SectorCard() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="space-y-8 md:space-y-12">
           {/* Rumsan For Impact Companies */}

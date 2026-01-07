@@ -30,6 +30,11 @@ export default function ContactForm() {
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     mode: "onChange",
+    defaultValues: {
+      contactName: "",
+      contactEmail: "",
+      contactMessage: "",
+    },
   });
 
   // Clear status message after 5 seconds
@@ -77,7 +82,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
           {/* Left Card - Contact Form */}

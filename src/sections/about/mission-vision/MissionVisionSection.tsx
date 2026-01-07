@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function MissionVisionSection() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-16 items-center">
           {/* Mission Column */}

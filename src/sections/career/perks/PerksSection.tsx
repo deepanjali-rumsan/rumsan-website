@@ -3,7 +3,7 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 export default function PerksSection() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">

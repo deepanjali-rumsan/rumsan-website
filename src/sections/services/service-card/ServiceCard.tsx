@@ -5,7 +5,7 @@ import ServiceCardItem from "./ServiceCardItem";
 
 export default function ServiceCard() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="space-y-8 md:space-y-12">
           {/* Strategy & Innovation Advisory */}

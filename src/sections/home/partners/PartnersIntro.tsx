@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/container";
 
 export default function PartnersIntro() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container className="text-center">
         <h2 className="mb-8 leading-tight">
           <span className="text-[#4252FF]">From Global Initatives To</span>
