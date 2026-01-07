@@ -18,5 +18,5 @@ export default function ContactHero() {
         </div>
       </Container>
     </section>
-  );s
+  )
 }
