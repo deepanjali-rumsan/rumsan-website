@@ -18,7 +18,7 @@ export default function TeamSection() {
   );
 
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         {/* Header */}
         <div className="flex items-start justify-between mb-8 md:mb-12">

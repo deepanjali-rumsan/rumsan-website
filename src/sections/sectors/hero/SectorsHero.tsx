@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/container";
 
 export default function SectorsHero() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4252FF]">

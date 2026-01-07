@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/container";
 
 export default function FeatureCards() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr_0.7fr] gap-6 md:gap-8 items-end">
           {/* Innovation with Purpose */}

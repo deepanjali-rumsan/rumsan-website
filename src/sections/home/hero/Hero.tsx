@@ -26,7 +26,7 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative py-20 overflow-hidden">
+    <section className="relative py-10 overflow-hidden">
       <DecorativeSquares />
 
       <Container>

@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CareerHero() {
   return (
     <>
-      <section className="py-20">
+      <section className="py-10">
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -21,18 +21,15 @@ export default function CareerHero() {
         </Container>
       </section>
 
-      {/* Team Image Section */}
-      <section className="pb-20">
-        <Container>
-          <div className="relative w-full h-[300px] md:h-[400px] lg:h-[480px] rounded-2xl overflow-hidden">
-            <Image
-              src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
-              alt="Rumsan Team"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </Container>
+      {/* Team Image Section - Full Width */}
+      <section className="relative h-[300px] md:h-[400px] lg:h-[480px] mb-20">
+        <Image
+          src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
+          alt="Rumsan Team"
+          fill
+          className="object-cover"
+          priority
+        />
       </section>
     </>
   );

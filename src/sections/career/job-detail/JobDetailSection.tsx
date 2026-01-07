@@ -42,6 +42,11 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
   } = useForm<ApplicationFormData>({
     resolver: zodResolver(applicationFormSchema),
     mode: "onChange",
+    defaultValues: {
+      fullName: "",
+      email: "",
+      message: "",
+    },
   });
 
   useEffect(() => {
@@ -157,7 +162,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 md:gap-12">
           {/* Left Section - Job Description */}

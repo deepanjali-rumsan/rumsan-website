@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Briefcase, GraduationCap, HeartPulse, ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 
 export default function ExploreOpportunitiesSection() {
   return (
-    <section className="py-20">
+    <section className="py-10">
       <Container>
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-[#4252FF] mb-4">
@@ -36,13 +37,13 @@ export default function ExploreOpportunitiesSection() {
                 role today, send us your profile we&apos;ll connect when a
                 suitable opportunity arises.
               </p>
-              <a
+              <Link
                 href="/career"
                 className="inline-flex items-center text-[#4252FF] font-semibold hover:text-[#4252FF]/80 transition-colors mb-6 md:mb-8"
               >
                 Apply Here
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
+              </Link>
             </div>
             <div className="px-6 md:px-8 pb-6 md:pb-8">
               <div className="h-72 md:h-80 overflow-hidden relative rounded-lg">
