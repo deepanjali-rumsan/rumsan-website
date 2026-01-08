@@ -12,14 +12,14 @@ export default function CTASection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://assets.rumsan.net/rahat/dsc-1830.jpg"
+          src="https://assets.rumsan.net/rahat/b13e15cdc2ea9a365f7a5dd3f19308a8777cb0de.jpg"
           alt="Team collaboration"
           fill
           className="object-cover"
           priority
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       {/* Content */}

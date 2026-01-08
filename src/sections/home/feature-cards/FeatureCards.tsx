@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/container";
 
 export default function FeatureCards() {
   return (
-    <section className="py-10">
+    <section className="py-10 hidden lg:block">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr_0.7fr] gap-6 md:gap-8 items-end">
           {/* Innovation with Purpose */}
@@ -16,8 +16,8 @@ export default function FeatureCards() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
             />
             <div className="absolute bottom-6 left-6 ">
-              <p className="text-white text-lg md:text-xl tracking-[0.7em] uppercase">
-                Innovation with Purpose
+              <p className="text-white! uppercase! font-bold! text-[1.4rem]! tracking-[3.2px]! font-[Montserrat]!">
+                Innovation <br /> with Purpose
               </p>
             </div>
           </div>
@@ -32,8 +32,9 @@ export default function FeatureCards() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
             />
             <div className="absolute bottom-6 left-6">
-              <p className="text-white text-lg md:text-xl tracking-[0.7em] uppercase font-bold">
-                Human-Centric Design
+              <p className="text-white! uppercase! font-bold! text-[1.4rem]! tracking-[3.2px]! font-[Montserrat]!">
+                Human-Centric <br />
+                Design
               </p>
             </div>
           </div>
@@ -48,8 +49,8 @@ export default function FeatureCards() {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
             />
             <div className="absolute bottom-6 left-6">
-              <p className="text-white text-lg md:text-xl tracking-[0.7em] uppercase font-bold">
-                Impact First
+              <p className="text-white! uppercase! font-bold! text-[1.4rem]! tracking-[3.2px]! font-[Montserrat]!">
+                Impact <br /> First
               </p>
             </div>
           </div>

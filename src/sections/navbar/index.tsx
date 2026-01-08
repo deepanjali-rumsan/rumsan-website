@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -19,6 +20,10 @@ const mobileNavLinkClasses =
   "text-gray-800 hover:text-blue-600 transition-colors font-medium text-lg bg-transparent hover:bg-transparent focus:bg-transparent data-active:bg-transparent";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const isActive = (path: string) => pathname === path;
+
   return (
     <nav className=" sticky top-0 z-50 w-full bg-white">
       <Container className="flex items-center justify-between">
@@ -39,42 +44,66 @@ export default function Navbar() {
           <NavigationMenuList className="gap-6">
             <NavigationMenuItem>
               <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/about") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   About Us
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/portfolio" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/portfolio") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   Portfolio
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/services" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/services") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   Our Services
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/sectors" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/sectors") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   Our Sectors
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/career" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/career") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   Career
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink className={navLinkClasses}>
+                <NavigationMenuLink
+                  className={`${navLinkClasses} ${
+                    isActive("/contact") ? "text-[#4252FF]" : ""
+                  }`}
+                >
                   Contact Us
                 </NavigationMenuLink>
               </Link>
@@ -90,47 +119,71 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right">
-            <NavigationMenu className="flex flex-col" viewport={false}>
-              <NavigationMenuList className="flex-col items-start gap-6 mt-8">
-                <NavigationMenuItem>
+          <SheetContent className="w-full max-w-none flex items-center justify-center">
+            <NavigationMenu className="flex flex-col w-full" viewport={false}>
+              <NavigationMenuList className="flex-col items-center gap-6 w-full max-w-xs mx-auto">
+                <NavigationMenuItem className="w-full">
                   <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/about") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       About Us
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="w-full">
                   <Link href="/portfolio" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/portfolio") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       Portfolio
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="w-full">
                   <Link href="/services" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/services") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       Our Services
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="w-full">
                   <Link href="/sectors" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/sectors") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       Our Sectors
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="w-full">
                   <Link href="/career" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/career") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       Career
                     </NavigationMenuLink>
                   </Link>
                 </NavigationMenuItem>
-                <NavigationMenuItem>
+                <NavigationMenuItem className="w-full">
                   <Link href="/contact" legacyBehavior passHref>
-                    <NavigationMenuLink className={mobileNavLinkClasses}>
+                    <NavigationMenuLink
+                      className={`${mobileNavLinkClasses} ${
+                        isActive("/contact") ? "text-[#4252FF]" : ""
+                      }`}
+                    >
                       Contact Us
                     </NavigationMenuLink>
                   </Link>

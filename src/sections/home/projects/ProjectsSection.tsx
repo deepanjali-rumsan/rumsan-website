@@ -18,7 +18,7 @@ export default function ProjectsSection() {
           transition={{ duration: 0.8 }}
           className="mb-12 md:mb-16 text-center"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+          <h2 className="text-3xl  md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
             <span className="text-[#4252FF]">Our</span>{" "}
             <span className="text-gray-800">Projects</span>
           </h2>
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
             className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-90 md:h-[350px] lg:h-[470px]"
           >
             <Image
-              src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80"
+              src="https://assets.rumsan.net/rahat/7ab37386ca1cd28d39e2f45a733bd3958bc8f991.jpg"
               alt="GigaBlocks"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -101,7 +101,7 @@ export default function ProjectsSection() {
             className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-90 md:h-[350px] lg:h-[470px]"
           >
             <Image
-              src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80"
+              src="https://assets.rumsan.net/rahat/9223b2a5bc54298a9034bf0802cc4f93d08f6406.png"
               alt="Plastic Bank"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -157,7 +157,7 @@ export default function ProjectsSection() {
             className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-90 md:h-[350px] lg:h-[470px]"
           >
             <Image
-              src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80"
+              src="https://assets.rumsan.net/rahat/42f5599d6170eb6956a29c57ae0a012df9b7d0d8.jpg"
               alt="UNICEF"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

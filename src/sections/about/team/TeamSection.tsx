@@ -14,7 +14,7 @@ import { useRef } from "react";
 
 export default function TeamSection() {
   const autoplayPlugin = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   );
 
   return (

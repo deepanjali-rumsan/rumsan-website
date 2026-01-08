@@ -21,7 +21,7 @@ export default function PartnersSection() {
             gap={40}
             duration={30}
             durationOnHover={50}
-            className="py-8"
+            className="py-4"
           >
             {/* GSMA */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
@@ -95,7 +95,7 @@ export default function PartnersSection() {
             gap={40}
             duration={35}
             durationOnHover={50}
-            className="py-8"
+            className="py-4"
             reverse
           >
             {/* Danish Red Cross */}
