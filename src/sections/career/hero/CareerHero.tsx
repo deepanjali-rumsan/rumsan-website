@@ -8,7 +8,7 @@ export default function CareerHero() {
         <Container>
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-[#4252FF]">Career</span>{" "}
+              <span className="text-[#3A4FEA]">Career</span>{" "}
               <span className="text-gray-600">At Rumsan</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed">

@@ -27,7 +27,7 @@ export default function TeamSection() {
               EXECUTIVES
             </h5>
             <h2>
-              <span className="text-[#4252FF]">Meet Our</span>{" "}
+              <span className="text-[#3A4FEA]">Meet Our</span>{" "}
               <span className="text-gray-600">Team</span>
             </h2>
           </div>

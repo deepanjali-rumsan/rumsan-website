@@ -89,9 +89,9 @@ export default function ContactForm() {
           <div className="bg-white rounded-2xl md:rounded-3xl border p-8 md:p-10 lg:p-12 shadow-md hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-blue-50 rounded-lg">
-                <Users className="w-6 h-6 text-[#4252FF]" />
+                <Users className="w-6 h-6 text-[#3A4FEA]" />
               </div>
-              <h4 className="text-2xl md:text-3xl font-bold text-[#4252FF]">
+              <h4 className="text-2xl md:text-3xl font-bold text-[#3A4FEA]">
                 Get In Touch With Us
               </h4>
             </div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
                   type="text"
                   id="contactName"
                   {...register("contactName")}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors ${
                     errors.contactName ? "border-red-500" : "border-gray-300"
                   }`}
                   placeholder="Enter your full name"
@@ -137,7 +137,7 @@ export default function ContactForm() {
                   type="email"
                   id="contactEmail"
                   {...register("contactEmail")}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors ${
                     errors.contactEmail ? "border-red-500" : "border-gray-300"
                   }`}
                   placeholder="Enter your email address"
@@ -160,7 +160,7 @@ export default function ContactForm() {
                   id="contactMessage"
                   rows={2}
                   {...register("contactMessage")}
-                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors resize-none ${
+                  className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors resize-none ${
                     errors.contactMessage ? "border-red-500" : "border-gray-300"
                   }`}
                   placeholder="Enter your message"
@@ -174,14 +174,14 @@ export default function ContactForm() {
 
               {isLoading && (
                 <div className="flex justify-center">
-                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#4252FF]"></div>
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#3A4FEA]"></div>
                 </div>
               )}
 
               <Button
                 type="submit"
                 disabled={isLoading || serverState.submitting}
-                className=" bg-[#4252FF] hover:bg-[#4252FF]/90 text-white font-semibold py-6 w-30 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className=" bg-[#3A4FEA] hover:bg-[#3A4FEA]/90 text-white font-semibold py-6 w-30 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? "Sending..." : "Submit"}
               </Button>

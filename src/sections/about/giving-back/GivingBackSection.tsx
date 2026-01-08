@@ -7,7 +7,7 @@ export default function GivingBackSection() {
   return (
     <>
       {/* Hamro LifeBank Section */}
-      <section className="pt-20 pb-10" style={{ backgroundColor: "#FDFBF7" }}>
+      <section className="pt-20 pb-10" style={{ backgroundColor: "#F6F7FE" }}>
         <Container>
           {/* Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -15,13 +15,14 @@ export default function GivingBackSection() {
               GIVING BACK
             </h5>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              <span className="text-[#4252FF]">
-                At Rumsan, Impact Isn&apos;t Just Something We Build For Our
-                Partners
+              <span className="text-[#3A4FEA]">
+                At Rumsan, Impact Isn&apos;t Just Something <br />
+                We Build For Our Partners But{" "}
+                <span className="text-gray-600">It&apos;s A </span>
               </span>
               <br />
               <span className="text-gray-600">
-                But It&apos;s A Responsibility We Carry At Home
+                Responsibility We Carry At Home
               </span>
             </h2>
           </div>
@@ -29,7 +30,7 @@ export default function GivingBackSection() {
           {/* Main Content - Two Columns */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* Left Column - Image */}
-            <div className="relative h-[400px] md:h-[500px] lg:h-auto rounded-xl overflow-hidden">
+            <div className="relative h-[300px] md:h-[500px] lg:h-auto rounded-xl overflow-hidden">
               <Image
                 src="https://assets.rumsan.net/rahat/rectangle-45.png"
                 alt="Blood donation event"
@@ -128,7 +129,7 @@ export default function GivingBackSection() {
       </section>
 
       {/* eSatya Section */}
-      <section className="pt-10 pb-20" style={{ backgroundColor: "#FDFBF7" }}>
+      <section className="pt-10 pb-20" style={{ backgroundColor: "#F6F7FE" }}>
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-stretch">
             {/* Left Column - Content */}
@@ -210,7 +211,7 @@ export default function GivingBackSection() {
             </div>
 
             {/* Right Column - Image */}
-            <div className="relative h-[400px] md:h-[500px] lg:h-auto rounded-xl overflow-hidden">
+            <div className="relative h-[300px] md:h-[500px] lg:h-auto rounded-xl overflow-hidden">
               <Image
                 src="https://assets.rumsan.net/rahat/img-5518.jpg"
                 alt="eSatya presentation"

@@ -9,7 +9,7 @@ import { Container } from "@/components/ui/container";
 
 export default function ProjectsSection() {
   return (
-    <section className="py-10" style={{ backgroundColor: "#FDFBF7" }}>
+    <section className="py-10"  style={{ backgroundColor: "#FDFBF7" }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,8 +19,8 @@ export default function ProjectsSection() {
           className="mb-12 md:mb-16 text-center"
         >
           <h2 className="text-3xl  md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-            <span className="text-[#4252FF]">Our</span>{" "}
-            <span className="text-gray-800">Projects</span>
+            <span className="text-[#3A4FEA]">Our</span>{" "}
+            <span className="text-gray-600">Projects</span>
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-6">
             From financial inclusion to climate resilience, our projects combine

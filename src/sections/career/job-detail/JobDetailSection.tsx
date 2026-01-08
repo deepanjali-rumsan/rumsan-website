@@ -170,7 +170,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
             {/* Go Back Link */}
             <Link
               href="/career"
-              className="inline-flex items-center gap-2 text-gray-600 hover:text-[#4252FF] transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-[#3A4FEA] transition-colors mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Go Back</span>
@@ -297,7 +297,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
                     type="text"
                     id="fullName"
                     {...register("fullName")}
-                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors ${
                       errors.fullName ? "border-red-500" : "border-gray-300"
                     }`}
                     placeholder="Your Full Name"
@@ -321,7 +321,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
                     type="email"
                     id="email"
                     {...register("email")}
-                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors ${
+                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors ${
                       errors.email ? "border-red-500" : "border-gray-300"
                     }`}
                     placeholder="Email Address"
@@ -345,7 +345,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
                     id="message"
                     rows={3}
                     {...register("message")}
-                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4252FF] focus:border-transparent transition-colors resize-none ${
+                    className={`w-full px-3 py-2.5 bg-white text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3A4FEA] focus:border-transparent transition-colors resize-none ${
                       errors.message ? "border-red-500" : "border-gray-300"
                     }`}
                     placeholder="Your Message"
@@ -401,7 +401,7 @@ export default function JobDetailSection({ job }: JobDetailSectionProps) {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-gradient-to-r from-[#4252FF] to-purple-600 hover:from-[#4252FF]/90 hover:to-purple-600/90 text-white font-semibold py-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm"
+                  className="w-full bg-gradient-to-r from-[#3A4FEA] to-purple-600 hover:from-[#3A4FEA]/90 hover:to-purple-600/90 text-white font-semibold py-6 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm"
                 >
                   {isLoading ? (
                     "Submitting..."

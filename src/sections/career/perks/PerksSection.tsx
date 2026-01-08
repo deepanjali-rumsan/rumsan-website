@@ -8,7 +8,7 @@ export default function PerksSection() {
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-[#4252FF]">Perks</span>{" "}
+            <span className="text-[#3A4FEA]">Perks</span>{" "}
             <span className="text-gray-600">At Rumsan</span>
           </h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto mb-4">
@@ -21,7 +21,7 @@ export default function PerksSection() {
           <p className="text-base md:text-lg text-gray-700">
             <a
               href="/contact"
-              className="text-[#4252FF] underline hover:text-[#4252FF]/80 transition-colors"
+              className="text-[#3A4FEA] underline hover:text-[#3A4FEA]/80 transition-colors"
             >
               Join us
             </a>{" "}
@@ -36,7 +36,7 @@ export default function PerksSection() {
           <div className="bg-gradient-to-br from-white to-pink-50 rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-blue-50 rounded-lg">
-                <Briefcase className="w-6 h-6 text-[#4252FF]" />
+                <Briefcase className="w-6 h-6 text-[#3A4FEA]" />
               </div>
               <h4 className="text-xl md:text-2xl font-bold text-gray-900">
                 Work Culture
@@ -87,7 +87,7 @@ export default function PerksSection() {
           <div className="bg-gradient-to-br from-white to-pink-50 rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-blue-50 rounded-lg">
-                <Briefcase className="w-6 h-6 text-[#4252FF]" />
+                <Briefcase className="w-6 h-6 text-[#3A4FEA]" />
               </div>
               <h4 className="text-xl md:text-2xl font-bold text-gray-900">
                 Financial Benefits

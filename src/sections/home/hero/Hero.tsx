@@ -17,7 +17,7 @@ export default function Hero() {
     <>
       Rumsan Is An <br />
       Impact{" "}
-      <span className="text-gray-500">
+      <span className="text-gray-600">
         Innovation
         <br />
         Company
@@ -37,11 +37,11 @@ export default function Hero() {
                 className="w-[120%] h-[120%] rounded-full blur-3xl opacity-30"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(78, 85, 288, 0.3) 0%, rgba(66, 82, 255, 0.3) 40%, transparent 70%)",
+                    "radial-gradient(circle, rgba(78, 85, 288, 0.3) 0%, rgba(58, 79, 234, 0.3) 40%, transparent 70%)",
                 }}
               />
             </div>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold relative z-10 text-[#4252FF]">
+            <span className="block text-4xl md:text-5xl lg:text-6xl font relative z-10 text-[#3A4FEA]">
               <WordRotate
                 words={[firstSlogan, secondSlogan]}
                 duration={5000}
@@ -59,12 +59,12 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 text-white rounded-2xl bg-[#4252FF] font-semibold hover:opacity-90 transition-all cursor-pointer flex items-center justify-center gap-2 text-base"
+              className="px-8 py-4 text-white rounded-2xl bg-[#3A4FEA] font-semibold hover:opacity-90 transition-all cursor-pointer flex items-center justify-center gap-2 text-base"
             >
               Talk to our team
               <span>→</span>
             </Link>
-            <button className="px-8 py-4 bg-white text-[#4252FF] rounded-2xl border-2 border-[#4252FF] font-semibold hover:bg-blue-50 transition-colors text-base cursor-pointer">
+            <button className="px-8 py-4 bg-white text-[#3A4FEA] rounded-2xl border-2 border-[#3A4FEA] font-semibold hover:bg-blue-50 transition-colors text-base cursor-pointer">
               Explore our work
             </button>
           </div>
