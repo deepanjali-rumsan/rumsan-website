@@ -51,7 +51,7 @@ export function WhatWeDo() {
     <section className="py-10">
       <div className="grid grid-cols-1 lg:grid-cols-12">
         {/* Left Section - Hero */}
-        <div className="lg:col-span-5">
+        <div className="hidden lg:block lg:col-span-5">
           <div className="sticky top-0 relative flex h-screen w-full flex-col bg-slate-900 p-8 text-white lg:p-12">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
@@ -84,11 +84,11 @@ export function WhatWeDo() {
               </div>
             </div>
 
-            <div className="absolute right-0 top-[60%] z-20 w-96 hidden lg:flex flex-col items-end">
+            <div className="absolute right-0 top-[60%] z-20 w-[500px] hidden lg:flex flex-col items-end">
               <div className="flex flex-col gap-3">
                 <button
                   onClick={() => scrollToSection("services")}
-                  className={`flex items-center justify-between rounded-s-lg px-10 py-4 text-left text-base font-medium transition-all ${
+                  className={`flex items-center justify-between rounded-s-lg px-30 py-4 text-left text-lg font-medium transition-all ${
                     activeTab === "services"
                       ? "bg-white text-slate-900 shadow-lg hover:bg-gray-50"
                       : "bg-slate-700/50 text-white backdrop-blur-sm hover:bg-slate-600/50"
@@ -101,7 +101,7 @@ export function WhatWeDo() {
                 </button>
                 <button
                   onClick={() => scrollToSection("sectors")}
-                  className={`flex items-center justify-between rounded-s-lg px-10 py-4 text-left text-base font-medium transition-all ${
+                  className={`flex items-center justify-between rounded-s-lg px-30 py-4 text-left text-lg font-medium transition-all ${
                     activeTab === "sectors"
                       ? "bg-white text-slate-900 shadow-lg hover:bg-gray-50"
                       : "bg-slate-700/50 text-white backdrop-blur-sm hover:bg-slate-600/50"

@@ -1,21 +1,19 @@
+import { Container } from "@/components/ui/container";
 import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="relative h-[500px] md:h-[500px] lg:h-[500px]">
-      <Image
-        src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
-        alt="Rumsan Team"
-        fill
-        className="object-cover"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/50"></div>
-      <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
-          About Rumsan
-        </h1>
-      </div>
+    <section className="py-10">
+      <Container>
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#4252FF]">
+            About <span className="text-gray-600">Rumsan</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+           At Rumsan, we’re building meaningful technology that creates real-world impact from frontier-tech solutions to digital innovation for communities. We believe that great work happens when passionate people collaborate, learn, and grow together.
+          </p>
+        </div>
+      </Container>
     </section>
   );
 }
