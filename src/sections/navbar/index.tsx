@@ -46,9 +46,8 @@ export default function Navbar() {
               <Link href="/about" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/about") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/about") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   About Us
                 </NavigationMenuLink>
               </Link>
@@ -57,9 +56,8 @@ export default function Navbar() {
               <Link href="/portfolio" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/portfolio") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/portfolio") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   Portfolio
                 </NavigationMenuLink>
               </Link>
@@ -68,9 +66,8 @@ export default function Navbar() {
               <Link href="/services" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/services") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/services") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   Our Services
                 </NavigationMenuLink>
               </Link>
@@ -79,9 +76,8 @@ export default function Navbar() {
               <Link href="/sectors" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/sectors") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/sectors") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   Our Sectors
                 </NavigationMenuLink>
               </Link>
@@ -90,9 +86,8 @@ export default function Navbar() {
               <Link href="/career" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/career") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/career") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   Career
                 </NavigationMenuLink>
               </Link>
@@ -101,9 +96,8 @@ export default function Navbar() {
               <Link href="/contact" legacyBehavior passHref>
                 <NavigationMenuLink
                   className={`${navLinkClasses} ${
-                    isActive("/contact") ? "text-[#4252FF]" : ""
-                  }`}
-                >
+                    isActive("/contact") ? "text-[#3A4FEA]" : ""
+                  }`}>
                   Contact Us
                 </NavigationMenuLink>
               </Link>
@@ -119,16 +113,17 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent className="w-full max-w-none flex items-center justify-center">
-            <NavigationMenu className="flex flex-col w-full" viewport={false}>
+          <SheetContent className="w-full max-w-none">
+            <NavigationMenu
+              className="flex flex-col w-full py-16 px-4 justify-start!"
+              viewport={false}>
               <NavigationMenuList className="flex-col items-center gap-6 w-full max-w-xs mx-auto">
                 <NavigationMenuItem className="w-full">
                   <Link href="/about" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/about") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/about") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       About Us
                     </NavigationMenuLink>
                   </Link>
@@ -137,9 +132,8 @@ export default function Navbar() {
                   <Link href="/portfolio" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/portfolio") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/portfolio") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       Portfolio
                     </NavigationMenuLink>
                   </Link>
@@ -148,9 +142,8 @@ export default function Navbar() {
                   <Link href="/services" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/services") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/services") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       Our Services
                     </NavigationMenuLink>
                   </Link>
@@ -159,9 +152,8 @@ export default function Navbar() {
                   <Link href="/sectors" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/sectors") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/sectors") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       Our Sectors
                     </NavigationMenuLink>
                   </Link>
@@ -170,9 +162,8 @@ export default function Navbar() {
                   <Link href="/career" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/career") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/career") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       Career
                     </NavigationMenuLink>
                   </Link>
@@ -181,9 +172,8 @@ export default function Navbar() {
                   <Link href="/contact" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={`${mobileNavLinkClasses} ${
-                        isActive("/contact") ? "text-[#4252FF]" : ""
-                      }`}
-                    >
+                        isActive("/contact") ? "text-[#3A4FEA]" : ""
+                      }`}>
                       Contact Us
                     </NavigationMenuLink>
                   </Link>

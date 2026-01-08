@@ -16,7 +16,7 @@ export default function OurValuesSection() {
           <h5 className="text-sm md:text-base font-medium tracking-widest uppercase mb-3 text-gray-500">
             OUR VALUES
           </h5>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#4252FF]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[#3A4FEA]">
             What Drives Us
             <span className="text-gray-500"> Forward</span>
           </h2>

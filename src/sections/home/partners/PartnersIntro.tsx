@@ -5,7 +5,7 @@ export default function PartnersIntro() {
     <section className="py-10">
       <Container className="text-center">
         <h2 className="mb-8 leading-tight">
-          <span className="text-[#4252FF]">From Global Initatives To</span>
+          <span className="text-[#3A4FEA]">From Global Initatives To</span>
           <br />
           <span className="text-gray-600">Emerging Impact Startups</span>
         </h2>

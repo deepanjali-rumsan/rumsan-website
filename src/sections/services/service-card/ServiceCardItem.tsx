@@ -41,7 +41,7 @@ export default function ServiceCardItem({
           <h4 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {number}. {title}
           </h4>
-          <p className="text-xl md:text-2xl font-semibold mb-6 text-[#4252FF]">
+          <p className="text-xl md:text-2xl font-semibold mb-6 text-[#3A4FEA]">
             {subtitle}
           </p>
           <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-8">
@@ -51,7 +51,7 @@ export default function ServiceCardItem({
           {/* Learn More Link */}
           <Link
             href="#"
-            className="inline-flex items-center gap-2 text-base md:text-lg font-semibold mb-8 group w-fit text-[#4252FF]"
+            className="inline-flex items-center gap-2 text-base md:text-lg font-semibold mb-8 group w-fit text-[#3A4FEA]"
           >
             Learn More
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

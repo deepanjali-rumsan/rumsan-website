@@ -18,7 +18,7 @@ export default function CurrentOpeningsSection() {
       <Container>
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#4252FF] mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#3A4FEA] mb-4">
             Current 
             <span className="text-gray-600"> Openings</span>
           </h2>

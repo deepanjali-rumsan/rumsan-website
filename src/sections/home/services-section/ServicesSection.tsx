@@ -77,7 +77,7 @@ export function WhatWeDo() {
                   We help you navigate complexity with clear strategies and
                   future-ready tools that turn ideas into impact.
                 </p>
-                <Button className="h-auto rounded-lg bg-[#4252FF] px-6 py-3.5 text-base font-medium text-white hover:bg-blue-800 cursor-pointer">
+                <Button className="h-auto rounded-lg bg-[#3A4FEA] px-6 py-3.5 text-base font-medium text-white hover:bg-blue-800 cursor-pointer">
                   Learn More
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -128,7 +128,7 @@ export function WhatWeDo() {
               WHAT WE DO
             </h5>
             <div className="mb-6 sm:mb-8 md:mb-10">
-              <h2 className="mb-3 flex items-center gap-2 text-xl text-[#4252FF] font-semibold sm:text-2xl">
+              <h2 className="mb-3 flex items-center gap-2 text-xl text-[#3A4FEA] font-semibold sm:text-2xl">
                 Our
                 <span className="text-gray-500">Services </span>
               </h2>
@@ -312,7 +312,7 @@ export function WhatWeDo() {
             className=" px-4 py-8 sm:px-6 sm:py-5 md:px-8 md:py-5 lg:px-12 lg:py-5 xl:px-16 xl:py-5"
           >
             <div className="mb-6 sm:mb-8 md:mb-10">
-              <h2 className="mb-3 flex items-center gap-2 text-xl font-semibold text-[#4252FF] sm:text-2xl">
+              <h2 className="mb-3 flex items-center gap-2 text-xl font-semibold text-[#3A4FEA] sm:text-2xl">
                 Our
                 <span className="text-gray-500">Sectors </span>
               </h2>

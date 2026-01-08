@@ -8,7 +8,7 @@ export default function ExploreOpportunitiesSection() {
     <section className="py-10">
       <Container>
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#4252FF] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#3A4FEA] mb-4">
             Explore More Opportunities
             <br />
             <span className="text-gray-600">To Connect With Us</span>
@@ -26,7 +26,7 @@ export default function ExploreOpportunitiesSection() {
             <div className="px-6 md:px-8 pt-6 md:pt-8 pb-0 flex-1 flex flex-col">
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-2 rounded-lg">
-                  <Briefcase className="w-6 h-6 text-[#4252FF]" />
+                  <Briefcase className="w-6 h-6 text-[#3A4FEA]" />
                 </div>
                 <h4 className="text-xl md:text-2xl font-bold text-gray-900">
                   For Careers
@@ -39,7 +39,7 @@ export default function ExploreOpportunitiesSection() {
               </p>
               <Link
                 href="/career"
-                className="inline-flex items-center text-[#4252FF] font-semibold hover:text-[#4252FF]/80 transition-colors mb-6 md:mb-8"
+                className="inline-flex items-center text-[#3A4FEA] font-semibold hover:text-[#3A4FEA]/80 transition-colors mb-6 md:mb-8"
               >
                 Apply Here
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -77,7 +77,7 @@ export default function ExploreOpportunitiesSection() {
                 href="https://esatya.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-[#4252FF] font-semibold hover:text-[#4252FF]/80 transition-colors mb-6 md:mb-8"
+                className="inline-flex items-center text-[#3A4FEA] font-semibold hover:text-[#3A4FEA]/80 transition-colors mb-6 md:mb-8"
               >
                 Apply Here
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -115,7 +115,7 @@ export default function ExploreOpportunitiesSection() {
                 </p>
                 <a
                   href="https://hamrolifebank.com/"
-                  className="inline-flex items-center text-[#4252FF] font-semibold hover:text-[#4252FF]/80 transition-colors"
+                  className="inline-flex items-center text-[#3A4FEA] font-semibold hover:text-[#3A4FEA]/80 transition-colors"
                 >
                   Learn More
                   <ArrowRight className="ml-2 w-5 h-5" />
