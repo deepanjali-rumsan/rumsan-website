@@ -23,7 +23,7 @@ export default function FeatureCards() {
           </div>
 
           {/* Human-Centric Design */}
-          <div className="relative overflow-hidden transition-transform duration-500 hover:-translate-y-1 h-48 md:h-52 lg:h-60 rounded-[28px]">
+          <div className="relative overflow-hidden transition-transform duration-500 hover:-translate-y-1 h-48 md:h-52 lg:h-65 rounded-[28px]">
             <Image
               src="https://assets.rumsan.net/rahat/whatsapp-image-2024-02-28-at-1.29.14-pm-1.jpeg"
               alt="Human-Centric Design"

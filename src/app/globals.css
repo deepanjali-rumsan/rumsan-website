@@ -118,13 +118,13 @@ h4 {
 
 @media (min-width: 768px) {
   h4 {
-    font-size: 22px; /* Tablet: 22px */
+    font-size: 18px; /* Tablet: 22px */
   }
 }
 
 @media (min-width: 1024px) {
   h4 {
-    font-size: 28px; /* Desktop: 28px */
+    font-size: 20px; /* Desktop: 28px */
   }
 }
 

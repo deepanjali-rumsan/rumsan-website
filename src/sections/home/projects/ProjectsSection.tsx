@@ -6,10 +6,9 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 
-
 export default function ProjectsSection() {
   return (
-    <section className="py-10"  style={{ backgroundColor: "#FDFBF7" }}>
+    <section className="py-10" style={{ backgroundColor: "#FDFBF7" }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -69,9 +68,6 @@ export default function ProjectsSection() {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 GigaBlocks
               </h3>
-              <p className="text-white text-sm md:text-base leading-tight line-clamp-2">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
             </div>
 
             {/* Hover content (full description + Learn more) */}
@@ -79,9 +75,6 @@ export default function ProjectsSection() {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
                 GigaBlocks
               </h3>
-              <p className="text-white text-base md:text-lg leading-relaxed mb-6">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
               <Link
                 href="/portfolio/gigablocks"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
@@ -125,9 +118,6 @@ export default function ProjectsSection() {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Plastic Bank
               </h3>
-              <p className="text-white text-sm md:text-base leading-tight line-clamp-2">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
             </div>
 
             {/* Hover content (full description + Learn more) */}
@@ -135,9 +125,6 @@ export default function ProjectsSection() {
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
                 Plastic Bank
               </h3>
-              <p className="text-white text-base md:text-lg leading-relaxed mb-6">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
               <Link
                 href="/portfolio/plastic-bank"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
@@ -148,7 +135,7 @@ export default function ProjectsSection() {
             </div>
           </motion.div>
 
-          {/* UNICEF */}
+          {/* Rahat */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -158,7 +145,7 @@ export default function ProjectsSection() {
           >
             <Image
               src="https://assets.rumsan.net/rahat/42f5599d6170eb6956a29c57ae0a012df9b7d0d8.jpg"
-              alt="UNICEF"
+              alt="Rahat"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
@@ -179,21 +166,15 @@ export default function ProjectsSection() {
             {/* Default content (title only) */}
             <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
-                UNICEF
+                Rahat
               </h3>
-              <p className="text-white text-sm md:text-base leading-tight line-clamp-2">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
             </div>
 
             {/* Hover content (full description + Learn more) */}
             <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
-                UNICEF
+                Rahat
               </h3>
-              <p className="text-white text-base md:text-lg leading-relaxed mb-6">
-                We help organizations design responsible, scalable digital strategies and system architectures that drive long-term impact.
-              </p>
               <Link
                 href="/portfolio/unicef"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"

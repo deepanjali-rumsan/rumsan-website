@@ -10,7 +10,7 @@ export default function MissionVisionSection() {
           {/* Left Column - Image */}
           <div className="relative h-[300px] md:h-[400px] lg:h-[400px] rounded-xl overflow-hidden">
             <Image
-              src="https://assets.rumsan.net/rahat/whatsapp-image-2024-02-28-at-1.29.14-pm-1.jpeg"
+              src="https://assets.rumsan.net/rahat/img-9438.jpg"
               alt="Team collaboration"
               fill
               className="object-cover"
