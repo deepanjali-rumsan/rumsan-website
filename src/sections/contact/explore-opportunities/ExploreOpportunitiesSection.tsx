@@ -115,6 +115,7 @@ export default function ExploreOpportunitiesSection() {
                 </p>
                 <a
                   href="https://hamrolifebank.com/"
+                  target="_blank"
                   className="inline-flex items-center text-[#3A4FEA] font-semibold hover:text-[#3A4FEA]/80 transition-colors"
                 >
                   Learn More

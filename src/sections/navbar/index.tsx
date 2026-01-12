@@ -43,64 +43,64 @@ export default function Navbar() {
         <NavigationMenu className="hidden lg:flex" viewport={false}>
           <NavigationMenuList className="gap-6">
             <NavigationMenuItem>
-              <Link href="/about" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/about") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  About Us
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/about") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/about">About Us</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/portfolio" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/portfolio") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  Portfolio
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/portfolio") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/portfolio">Portfolio</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/services" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/services") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  Our Services
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/services") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/services">Our Services</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/sectors" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/sectors") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  Our Sectors
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/sectors") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/sectors">Our Sectors</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/career" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/career") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  Career
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/career") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/career">Career</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact" legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={`${navLinkClasses} ${
-                    isActive("/contact") ? "text-[#3A4FEA]" : ""
-                  }`}>
-                  Contact Us
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={`${navLinkClasses} ${
+                  isActive("/contact") ? "text-[#3A4FEA]" : ""
+                }`}
+              >
+                <Link href="/contact">Contact Us</Link>
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
@@ -116,67 +116,68 @@ export default function Navbar() {
           <SheetContent className="w-full max-w-none">
             <NavigationMenu
               className="flex flex-col w-full py-16 px-4 justify-start!"
-              viewport={false}>
+              viewport={false}
+            >
               <NavigationMenuList className="flex-col items-center gap-6 w-full max-w-xs mx-auto">
                 <NavigationMenuItem className="w-full">
-                  <Link href="/about" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/about") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      About Us
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/about") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/about">About Us</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/portfolio" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/portfolio") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      Portfolio
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/portfolio") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/portfolio">Portfolio</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/services" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/services") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      Our Services
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/services") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/services">Our Services</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/sectors" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/sectors") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      Our Sectors
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/sectors") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/sectors">Our Sectors</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/career" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/career") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      Career
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/career") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/career">Career</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className="w-full">
-                  <Link href="/contact" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={`${mobileNavLinkClasses} ${
-                        isActive("/contact") ? "text-[#3A4FEA]" : ""
-                      }`}>
-                      Contact Us
-                    </NavigationMenuLink>
-                  </Link>
+                  <NavigationMenuLink
+                    asChild
+                    className={`${mobileNavLinkClasses} ${
+                      isActive("/contact") ? "text-[#3A4FEA]" : ""
+                    }`}
+                  >
+                    <Link href="/contact">Contact Us</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>

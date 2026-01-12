@@ -20,17 +20,6 @@ export default function CareerHero() {
           </div>
         </Container>
       </section>
-
-      {/* Team Image Section - Full Width */}
-      <section className="relative h-[300px] md:h-[400px] lg:h-[480px] mb-20">
-        <Image
-          src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
-          alt="Rumsan Team"
-          fill
-          className="object-cover"
-          priority
-        />
-      </section>
     </>
   );
 }

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface SectorCardItemProps {
+  id: string;
   number: string;
   title: string;
   subtitle: string;
@@ -15,6 +16,7 @@ interface SectorCardItemProps {
 }
 
 export default function SectorCardItem({
+  id,
   number,
   title,
   subtitle,
@@ -50,7 +52,7 @@ export default function SectorCardItem({
 
           {/* Learn More Link */}
           <Link
-            href="#"
+            href={`/sectors/${id}`}
             className="inline-flex items-center gap-2 text-base md:text-lg font-semibold mb-8 group w-fit text-[#3A4FEA]"
           >
             Learn More

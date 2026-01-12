@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function WhatWeDo() {
   const [activeTab, setActiveTab] = useState<"services" | "sectors">(
@@ -62,7 +63,7 @@ export function WhatWeDo() {
                 className="object-cover opacity-60"
                 priority
               />
-              <div className="absolute inset-0 bg-slate-800/30" />
+              <div className="absolute inset-0 bg-slate-600/20" />
             </div>
 
             {/* Content - Top Section */}
@@ -140,176 +141,184 @@ export function WhatWeDo() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:gap-2 md:grid-cols-2 md:gap-4 lg:gap-4">
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/b76aa1d121680c01de1fec6d7ef566cec77f9da5.jpg"
-                    alt="Strategy & Innovation Advisory"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+              <Link href="/services#service-1">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/dsc-1894.webp"
+                      alt="Strategy & Innovation Advisory"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
 
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
 
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
 
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Strategy & Innovation Advisory
-                    </h4>
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Strategy & Innovation Advisory
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Strategy & Innovation Advisory
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
+                </Card>
+              </Link>
 
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Strategy & Innovation Advisory
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+              <Link href="/services#service-2">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/3bf29d55d19cc3cf21ce134a843025220414d5be.jpg"
+                      alt="Blockchain & Web3 Solutions"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
+
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Blockchain & Web3 Solutions
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Blockchain & Web3 Solutions
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/933a9ae47def7afda0989236b403a7e7f5365812.jpg"
-                    alt="Blockchain & Web3 Solutions"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+              <Link href="/services#service-3">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58   sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/ai.jpg"
+                      alt="Artificial Intelligence & Automation"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
 
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
 
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
 
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Blockchain & Web3 Solutions
-                    </h4>
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Artificial Intelligence & Automation
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Artificial Intelligence & Automation
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
+                </Card>
+              </Link>
 
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Blockchain & Web3 Solutions
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+              <Link href="/services#service-4">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/bb6aa67663eb67ecebbbba2e1d4705934a6d85a3.jpg"
+                      alt="Global Delivery & Team Augmentation"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
+
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Global Delivery & Team Augmentation
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Global Delivery & Team Augmentation
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </Card>
-
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58   sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/3bf29d55d19cc3cf21ce134a843025220414d5be.jpg"
-                    alt="Artificial Intelligence & Automation"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
-
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
-
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Artificial Intelligence & Automation
-                    </h4>
-                  </div>
-
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Artificial Intelligence & Automation
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/bb6aa67663eb67ecebbbba2e1d4705934a6d85a3.jpg"
-                    alt="Global Delivery & Team Augmentation"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
-
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
-
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Global Delivery & Team Augmentation
-                    </h4>
-                  </div>
-
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Global Delivery & Team Augmentation
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </div>
           </div>
 
           {/* Sectors Section */}
           <div
             ref={sectorsRef}
-            className=" px-4 py-8 sm:px-6 sm:py-5 md:px-8 md:py-5 lg:px-12 lg:py-5 xl:px-16 xl:py-5"
+            className=" px-4 py-8 sm:px-6 sm:py-10 md:px-8 md:py-12 lg:px-12 lg:py-16 xl:px-16 xl:py-10"
           >
             <div className="mb-6 sm:mb-8 md:mb-10">
               <h2 className="mb-3 flex items-center gap-2 text-xl font-semibold text-[#3A4FEA] sm:text-2xl">
@@ -324,169 +333,134 @@ export function WhatWeDo() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:gap-2 md:grid-cols-2 md:gap-4 lg:gap-4">
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rumsan-group/dsc-1842.jpg"
-                    alt="Financial Services"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+              <Link href="/sectors/impact-companies">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/impact.jpg"
+                      alt="Financial Services"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
 
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
 
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
 
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Financial Services
-                    </h4>
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Rumsan For Impact Companies
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Rumsan For Impact Companies
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
+                </Card>
+              </Link>
 
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Financial Services
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+              <Link href="/sectors/government">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/10-2.png"
+                      alt="Healthcare & Life Sciences"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
+
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Rumsan For Government
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Rumsan For Government
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
 
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/dsc-1799.jpg"
-                    alt="Healthcare & Life Sciences"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+              <Link href="/sectors/humanitarian-development">
+                <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
+                  <div className="relative w-full h-58 sm:h-56 md:h-64">
+                    <Image
+                      src="https://assets.rumsan.net/rahat/human.jpeg"
+                      alt="Retail & Consumer Goods"
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
 
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
+                    {/* Default gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
 
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
+                    {/* Hover gradient overlay */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
+                      style={{
+                        background:
+                          "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
+                      }}
+                    ></div>
 
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Healthcare & Life Sciences
-                    </h4>
+                    {/* Default content (title only) */}
+                    <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+                      <h4 className="text-white text-xl md:text-2xl font-bold">
+                        Rumsan For Humanitarian And Development Partners
+                      </h4>
+                    </div>
+
+                    {/* Hover content (title + Learn more) */}
+                    <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                      <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
+                        Rumsan For Humanitarian And Development Partners
+                      </h4>
+                      <button className="inline-flex cursor-pointer items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
+                        Learn more
+                        <ArrowRight className="w-5 h-5" />
+                      </button>
+                    </div>
                   </div>
-
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Healthcare & Life Sciences
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/img-5518.jpg"
-                    alt="Education & Public Sector"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
-
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
-
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Education & Public Sector
-                    </h4>
-                  </div>
-
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Education & Public Sector
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl">
-                <div className="relative w-full h-58 sm:h-56 md:h-64">
-                  <Image
-                    src="https://assets.rumsan.net/rahat/b76aa1d121680c01de1fec6d7ef566cec77f9da5.jpg"
-                    alt="Retail & Consumer Goods"
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-
-                  {/* Default gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent transition-opacity duration-500 group-hover:opacity-0"></div>
-
-                  {/* Hover gradient overlay */}
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom, rgba(255, 218, 185, 1) 0%, rgba(220, 180, 240, 1) 45%, rgba(140, 150, 255, 1) 100%)",
-                    }}
-                  ></div>
-
-                  {/* Default content (title only) */}
-                  <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
-                    <h4 className="text-white text-xl md:text-2xl font-bold">
-                      Retail & Consumer Goods
-                    </h4>
-                  </div>
-
-                  {/* Hover content (title + Learn more) */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <h4 className="text-white text-xl md:text-2xl font-bold mb-4">
-                      Retail & Consumer Goods
-                    </h4>
-                    <button className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all">
-                      Learn more
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-              </Card>
+                </Card>
+              </Link>
             </div>
           </div>
         </div>
