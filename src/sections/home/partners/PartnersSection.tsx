@@ -78,10 +78,50 @@ export default function PartnersSection() {
               />
             </div>
 
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/stacked---mcv-gray-1.png"
+                alt="Google Startups for Sustainable Development"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/logo-horizontal4x.webp"
+                alt="Google Startups for Sustainable Development"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
             {/* Google Startups for Sustainable Development */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
               <Image
                 src="https://assets.rumsan.net/rumsan-group/partners-google-startup-png.png"
+                alt="Google Startups for Sustainable Development"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/heifer-nepal-logoh-cmyk-600x247.png"
+                alt="Heifer Nepal"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/nepal-red-cross-logo-english-1.svg"
                 alt="Google Startups for Sustainable Development"
                 width={200}
                 height={150}
@@ -142,17 +182,6 @@ export default function PartnersSection() {
               />
             </div>
 
-            {/* MIT Solve */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
-              <Image
-                src="https://rumsan.nyc3.cdn.digitaloceanspaces.com/rumsan-group/mit-solve-logo-home-page.png"
-                alt="MIT Solve"
-                width={200}
-                height={150}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-
             {/* New Partner 1 */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
               <Image
@@ -164,6 +193,15 @@ export default function PartnersSection() {
               />
             </div>
 
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/plastic-bank-2024-logo.png"
+                alt="Google Startups for Sustainable Development"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
             {/* New Partner 2 */}
             <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
               <Image
@@ -180,6 +218,16 @@ export default function PartnersSection() {
               <Image
                 src="https://assets.rumsan.net/rahat/33b27c28e6830817cb9e8dbf7cc752a816b85d5f.png"
                 alt="Partner"
+                width={200}
+                height={150}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center p-6 bg-white rounded-xl min-w-[200px] h-[150px]">
+              <Image
+                src="https://assets.rumsan.net/rahat/giga-logo.png"
+                alt="Google Startups for Sustainable Development"
                 width={200}
                 height={150}
                 className="max-w-full max-h-full object-contain"

@@ -21,15 +21,16 @@ export const sectors: Sector[] = [
     title: "Rumsan For Impact Companies",
     subtitle: "Scaling Purpose With Technology",
     description:
-      "We help purpose-driven organizations use technology to scale their mission, prove their impact, and build trust with customers, partners, and investors. Impact companies operate in complex environments balancing mission, sustainability, and growth. We provide the digital infrastructure, tools, and expertise to help them navigate these challenges and amplify their positive impact.",
-    imageUrl: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+      "We help purpose-driven organizations use technology to scale their mission, prove their impact, and build trust with customers, partners, and investors.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
     imageAlt: "Impact companies technology",
     imagePosition: "right",
     detailedDescription:
-      "We help purpose-driven organizations use technology to scale their mission, prove their impact, and build trust with customers, partners, and investors. Impact companies operate in complex environments balancing mission, sustainability, and growth. We provide the digital infrastructure, tools, and expertise to help them navigate these challenges and amplify their positive impact.",
+    "We help purpose-driven organizations use technology to scale their mission, prove their impact, and build trust with customers, partners, and investors. Impact companies operate in complex environments balancing mission, sustainability, and growth. We support you by designing digital systems that bring transparency, automate operations, and strengthen credibility. From circular economy platforms to supply-chain traceability and digital incentive tools, we help impact enterprises build technology that evolves with their goals and scales to new markets.",
     services: [
       {
-        icon: "sparkles",
+        icon: "sparkles", 
         title: "Digital product design (Web, Mobile, Portals, dashboards)",
       },
       {
@@ -37,13 +38,14 @@ export const sectors: Sector[] = [
         title: "Blockchain-powered reward & incentive mechanisms",
       },
       {
-        icon: "users",
-        title: "Team augmentation for long-term engineering capacity",
-      },
-      {
         icon: "wave",
         title: "AI tools for impact reporting, analytics & workflow automation",
       },
+      {
+        icon: "users",
+        title: "Team augmentation for long-term engineering capacity",
+      },
+
       {
         icon: "rocket",
         title: "From MVP to scale: roadmap, architecture & global rollout",
@@ -61,7 +63,8 @@ export const sectors: Sector[] = [
     subtitle: "Building Systems For Accountability",
     description:
       "Governments need systems that are secure, citizen-centric, and built for long-term adoption. We help public sector organizations design and implement digital solutions that enhance transparency, improve service delivery, and build public trust. Our approach combines rigorous security practices, user-centered design, and sustainable technology choices that serve citizens effectively.",
-    imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
     imageAlt: "Government digital systems",
     imagePosition: "left",
     detailedDescription:
@@ -100,7 +103,8 @@ export const sectors: Sector[] = [
     subtitle: "Delivering Aid Efficiently, Transparently, And At Scale",
     description:
       "We build reliable, secure digital tools that help humanitarian and development organizations deliver aid efficiently, transparently, and at scale. From cash transfer systems to program management platforms, our solutions are designed for challenging field conditions, diverse user needs, and long-term sustainability. We work closely with local partners, governments, and field teams to ensure our technology serves those who need it most.",
-    imageUrl: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+    imageUrl:
+      "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
     imageAlt: "Humanitarian and development technology",
     imagePosition: "right",
     detailedDescription:

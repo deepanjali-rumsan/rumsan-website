@@ -63,18 +63,15 @@ export default function ProjectsSection() {
               }}
             ></div>
 
-            {/* Default content (title only) */}
-            <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+            {/* Content visible by default */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 transition-opacity duration-500">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 GigaBlocks
               </h3>
-            </div>
-
-            {/* Hover content (full description + Learn more) */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
-                GigaBlocks
-              </h3>
+              <p className="text-white/90 text-sm md:text-base mb-3">
+                Connecting schools through blockchain-powered internet
+                connectivity solutions.
+              </p>
               <Link
                 href="/portfolio/gigablocks"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
@@ -113,18 +110,15 @@ export default function ProjectsSection() {
               }}
             ></div>
 
-            {/* Default content (title only) */}
-            <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+            {/* Content visible by default */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 transition-opacity duration-500">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Plastic Bank
               </h3>
-            </div>
-
-            {/* Hover content (full description + Learn more) */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
-                Plastic Bank
-              </h3>
+              <p className="text-white/90 text-sm md:text-base mb-3">
+                Transforming plastic waste into digital assets to incentivize
+                recycling.
+              </p>
               <Link
                 href="/portfolio/plastic-bank"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
@@ -144,7 +138,7 @@ export default function ProjectsSection() {
             className="group relative overflow-hidden rounded-2xl shadow-lg transition-transform duration-500 hover:-translate-y-2 h-90 md:h-[350px] lg:h-[470px]"
           >
             <Image
-              src="https://assets.rumsan.net/rahat/42f5599d6170eb6956a29c57ae0a012df9b7d0d8.jpg"
+              src="https://assets.rumsan.net/rahat/rahat-80-jaleshwor-2--2---1--720.jpg"
               alt="Rahat"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -163,18 +157,15 @@ export default function ProjectsSection() {
               }}
             ></div>
 
-            {/* Default content (title only) */}
-            <div className="absolute bottom-6 left-6 right-6 transition-opacity duration-500 group-hover:opacity-0">
+            {/* Content visible by default */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 transition-opacity duration-500">
               <h3 className="text-white text-2xl md:text-3xl font-bold mb-2">
                 Rahat
               </h3>
-            </div>
-
-            {/* Hover content (full description + Learn more) */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h3 className="text-white text-2xl md:text-3xl font-bold mb-4">
-                Rahat
-              </h3>
+              <p className="text-white/90 text-sm md:text-base mb-3">
+                Blockchain-based cash and voucher assistance for humanitarian
+                aid distribution.
+              </p>
               <Link
                 href="/portfolio/unicef"
                 className="inline-flex items-center gap-2 text-white font-semibold hover:gap-3 transition-all group/link"
