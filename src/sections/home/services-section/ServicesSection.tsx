@@ -274,7 +274,7 @@ export function WhatWeDo() {
                 <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
                   <div className="relative w-full h-58 sm:h-56 md:h-64">
                     <Image
-                      src="https://assets.rumsan.net/rahat/bb6aa67663eb67ecebbbba2e1d4705934a6d85a3.jpg"
+                      src="https://assets.rumsan.net/rahat/20241114-112131-720.jpg"
                       alt="Global Delivery & Team Augmentation"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"

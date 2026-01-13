@@ -11,7 +11,7 @@ export default function Footer() {
       {/* Upper Section - Main Footer Content */}
       <div className="py-10">
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-6 lg:gap-6 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 lg:gap-8 items-start">
             {/* Rumsan (About Section) */}
             <div className="lg:col-span-1 flex flex-col">
               <div className="flex items-center gap-3 mb-6">
@@ -72,7 +72,7 @@ export default function Footer() {
             </div>
 
             {/* Resources */}
-            <div className="space-y-4 lg:pt-[64px]">
+            {/* <div className="space-y-4 lg:pt-[64px]">
               <h5 className="text-sm font-semibold mb-3">Resources</h5>
               <ul className="space-y-2">
                 <li>
@@ -108,7 +108,7 @@ export default function Footer() {
                   </Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Our Policies */}
             <div className="space-y-4 lg:pt-[64px]">
@@ -116,48 +116,54 @@ export default function Footer() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="https://docs.google.com/document/d/1pWc5apsDdVDQvQXIaIMckGXfQo4YHs5ZoXMrKxIvdNQ/edit?usp=sharing"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/modern-slavery"
+                    href="https://docs.google.com/document/d/1EbiUnsohBLlIn_1z5rThNLOdsh06jKzARlAVsW8YeX0/edit?usp=sharing"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Modern Slavery
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/environmental-sustainability-policy"
+                    href="https://docs.google.com/document/d/1s_ipHs-TbfuPmjcyydwBkfP6lNfw4vr_UB3zQuZMa2o/edit?usp=sharing"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Environmental Sustainability Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/bribery-policy"
+                    href="https://docs.google.com/document/d/1Qrz95R6XmchahCvgM5q2gzqSt0MjUKUjM3b-vCbCDUU/edit?usp=sharing"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Bribery Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/child-protection-policy"
+                    href="https://docs.google.com/document/d/1cZGhSOxZpet62NuwnAq6m9bnl2gs5Vzg/edit?usp=sharing&ouid=113570786266797111417&rtpof=true&sd=true"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Child Protection and Vulnerable Policy
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="/whistleblowing"
+                    href="https://docs.google.com/document/d/1f1CQAgWqqyoqCPxeMa8LKAdtnr7B5jTyNFdACXyCYVM/edit?usp=sharing"
                     className="text-sm md:text-base text-gray-300 hover:text-white transition-colors"
+                    target="_blank"
                   >
                     Whistleblowing and Incident Reporting
                   </Link>
