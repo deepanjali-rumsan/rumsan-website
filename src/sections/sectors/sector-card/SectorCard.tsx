@@ -16,7 +16,7 @@ export default function SectorCard() {
                 number={sector.number}
                 title={sector.title}
                 subtitle={sector.subtitle}
-                description={sector.description}
+                description={sector.detailedDescription || ""}
                 imageUrl={sector.imageUrl}
                 imageAlt={sector.imageAlt}
                 imagePosition={sector.imagePosition}

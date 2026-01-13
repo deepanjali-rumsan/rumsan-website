@@ -26,7 +26,7 @@ export default function OurValuesSection() {
           {/* Card 1: Impact First */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Target className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <Target className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Impact First
@@ -40,7 +40,7 @@ export default function OurValuesSection() {
           {/* Card 2: Ethics by Design */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Scale className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <Scale className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Ethics by Design
@@ -54,7 +54,7 @@ export default function OurValuesSection() {
           {/* Card 3: Innovation with Purpose */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Lightbulb className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <Lightbulb className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Innovation with Purpose
@@ -68,7 +68,7 @@ export default function OurValuesSection() {
           {/* Card 4: Collaboration Over Silos */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Network className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <Network className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Collaboration Over Silos
@@ -82,7 +82,7 @@ export default function OurValuesSection() {
           {/* Card 5: Reliability & Trust */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <ShieldCheck className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <ShieldCheck className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Reliability & Trust
@@ -96,7 +96,7 @@ export default function OurValuesSection() {
           {/* Card 6: Human-Centered Technology */}
           <div className="bg-white rounded-xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow">
             <div className="mb-4">
-              <Users className="w-10 h-10 md:w-12 md:h-12 text-[#f97316]" />
+              <Users className="w-8 h-8 md:w-8 md:h-8 text-[#f97316]" />
             </div>
             <h5 className="text-xl md:text-2xl font-bold text-black mb-3">
               Human-Centered Technology

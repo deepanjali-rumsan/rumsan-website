@@ -1,6 +1,5 @@
 "use client";
 
-import { Container } from "@/components/ui/container";
 import {
   Carousel,
   CarouselContent,
@@ -54,53 +53,53 @@ export default function CareerImageCarousel() {
   }, [api]);
 
   return (
-    <section className="py-10">
-      <Container>
-        <Carousel
-          setApi={setApi}
-          className="w-full"
-          opts={{
-            align: "start",
-            slidesToScroll: 1,
-            loop: true,
-          }}
-          plugins={[autoplayPlugin.current]}
-        >
-          <CarouselContent className="-ml-2 md:-ml-4">
-            {images.map((image, index) => (
-              <CarouselItem
-                key={index}
-                className="pl-2 md:pl-4 basis-full md:basis-1/3"
-              >
-                <div className="relative h-[300px] md:h-[400px] rounded-xl overflow-hidden">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
-
-        {/* Carousel Indicators */}
-        <div className="flex justify-center gap-2 mt-6">
-          {images.map((_, index) => (
-            <button
+    <section className="w-full py-10 overflow-hidden">
+      <Carousel
+        setApi={setApi}
+        className="w-full"
+        opts={{
+          align: "center",
+          slidesToScroll: 1,
+          loop: true,
+        }}
+        plugins={[autoplayPlugin.current]}
+      >
+        <CarouselContent className="ml-0">
+          {images.map((image, index) => (
+            <CarouselItem
               key={index}
-              onClick={() => api?.scrollTo(index)}
-              className={`h-2 rounded-full transition-all ${
-                current === index + 1
-                  ? "bg-[#3A4FEA] w-8"
-                  : "bg-gray-300 w-2"
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
+              className="pl-4 md:pl-6 lg:pl-8 basis-[85%] md:basis-[45%] lg:basis-[40%]"
+            >
+              <div
+                className={`relative h-[200px] md:h-[300px] lg:h-[300px] transition-opacity duration-300 ${
+                  index === current - 1 ? "opacity-100" : "opacity-80"
+                }`}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover rounded-lg"
+                />
+              </div>
+            </CarouselItem>
           ))}
-        </div>
-      </Container>
+        </CarouselContent>
+      </Carousel>
+
+      {/* Carousel Indicators */}
+      <div className="flex justify-center gap-2 mt-6">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => api?.scrollTo(index)}
+            className={`h-2 rounded-full transition-all ${
+              current === index + 1 ? "bg-[#3A4FEA] w-8" : "bg-gray-300 w-2"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </section>
   );
 }

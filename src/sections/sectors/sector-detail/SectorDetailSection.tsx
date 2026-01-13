@@ -14,10 +14,20 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Sector } from "@/src/lib/data/sectors";
+
+interface Service {
+  icon: string;
+  title: string;
+}
 
 interface SectorDetailSectionProps {
-  sector: Sector;
+  title: string;
+  subtitle: string;
+  description: string;
+  detailedDescription?: string;
+  imageUrl: string;
+  imageAlt: string;
+  services: Service[];
 }
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -30,9 +40,14 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export default function SectorDetailSection({
-  sector,
+  title,
+  subtitle,
+  description,
+  detailedDescription,
+  imageUrl,
+  imageAlt,
+  services,
 }: SectorDetailSectionProps) {
-  const IconComponent = iconMap[sector.services[0]?.icon] || Sparkles;
 
   return (
     <section className="py-10">
@@ -51,18 +66,18 @@ export default function SectorDetailSection({
           {/* Left Side - Text Content */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              {sector.title}: {sector.subtitle}
+              {title}: {subtitle}
             </h2>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-              {sector.detailedDescription || sector.description}
+              {detailedDescription || description}
             </p>
           </div>
 
           {/* Right Side - Image */}
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
             <Image
-              src={sector.imageUrl}
-              alt={sector.imageAlt}
+              src={imageUrl}
+              alt={imageAlt}
               fill
               className="object-cover"
               priority
@@ -76,13 +91,13 @@ export default function SectorDetailSection({
             What We <span className="text-gray-600">Help You With</span>
           </h2>
           <p className="text-base md:text-lg text-gray-600 text-center max-w-4xl mx-auto mb-12">
-            {sector.description}
+            {description}
           </p>
 
           {/* Services Grid with Join Us Card */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Row 1 - 3 service cards */}
-            {sector.services.slice(0, 3).map((service, index) => {
+            {services.slice(0, 3).map((service, index) => {
               const ServiceIcon = iconMap[service.icon] || Sparkles;
               return (
                 <div
@@ -105,7 +120,7 @@ export default function SectorDetailSection({
 
             {/* Row 2 - Card 4 (left), empty middle, empty right for Join Us */}
             {/* Card 4 - Left column */}
-            {sector.services.slice(3, 4).map((service, index) => {
+            {services.slice(3, 4).map((service, index) => {
               const ServiceIcon = iconMap[service.icon] || Sparkles;
               return (
                 <div
@@ -141,7 +156,7 @@ export default function SectorDetailSection({
 
             {/* Row 3 - Rocket card (left), Lock card (middle) */}
             {/* Rocket card - Left column */}
-            {sector.services.slice(4, 5).map((service, index) => {
+            {services.slice(4, 5).map((service, index) => {
               const ServiceIcon = iconMap[service.icon] || Sparkles;
               return (
                 <div
@@ -161,7 +176,7 @@ export default function SectorDetailSection({
             })}
 
             {/* Lock card - Middle column */}
-            {sector.services.slice(5, 6).map((service, index) => {
+            {services.slice(5, 6).map((service, index) => {
               const ServiceIcon = iconMap[service.icon] || Sparkles;
               return (
                 <div

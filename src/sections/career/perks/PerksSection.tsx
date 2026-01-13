@@ -27,7 +27,7 @@ export default function PerksSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
           {/* Work Culture Card */}
           <div
-            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow h-full"
             style={{
               background: "linear-gradient(90deg, #F0F7FF 0%, #FCF0FE 100%)",
             }}
@@ -57,7 +57,7 @@ export default function PerksSection() {
 
           {/* Learning & Career Growth Card */}
           <div
-            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow h-full"
             style={{
               background: "linear-gradient(270deg, #F6F2FF 0%, #F0F7FF 100%)",
             }}
@@ -82,10 +82,10 @@ export default function PerksSection() {
             </div>
           </div>
 
-          {/* Outdoor Cafe Image */}
-          <div className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow h-full min-h-[250px] md:min-h-[300px]">
+          {/* Outdoor Cafe Image - Hidden on mobile */}
+          <div className="hidden md:block relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow h-full min-h-[300px]">
             <Image
-              src="https://assets.rumsan.net/rahat/dsc-1908.jpg"
+              src="https://assets.rumsan.net/rahat/img-2.jpg"
               alt="Team meeting at outdoor cafe"
               fill
               className="object-cover"
@@ -95,8 +95,8 @@ export default function PerksSection() {
 
         {/* Second Row - Group Photo and Financial Benefits */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-6 md:mb-8">
-          {/* Group Photo */}
-          <div className="md:col-span-2 relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[300px] md:h-[300px] lg:h-[300px]">
+          {/* Group Photo - Hidden on mobile */}
+          <div className="hidden md:block md:col-span-2 relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow h-[300px]">
             <Image
               src="https://assets.rumsan.net/rahat/20251111-152206.jpg"
               alt="Rumsan team group photo"
@@ -107,7 +107,7 @@ export default function PerksSection() {
 
           {/* Financial Benefits Card */}
           <div
-            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow h-full"
             style={{
               background: "linear-gradient(90deg, #F0F7FF 0%, #FCF0FE 100%)",
             }}
@@ -143,7 +143,7 @@ export default function PerksSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {/* Leave & Well Being Card */}
           <div
-            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow"
+            className="rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow h-[300px]"
             style={{
               background: "linear-gradient(270deg, #F6F2FF 0%, #F0F7FF 100%)",
             }}
@@ -171,22 +171,22 @@ export default function PerksSection() {
           </div>
 
           {/* Join Us Section */}
-          <div className="md:col-span-2 bg-[#F1FFE0] rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow flex flex-col justify-between">
-            <div>
-              <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-6">
+          <div className="md:col-span-2 bg-[#F1FFE0] rounded-2xl p-6 md:p-8 shadow-md hover:shadow-lg transition-shadow relative overflow-hidden hidden md:block">
+            <div className="relative z-10">
+              <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-6 max-w-md">
                 <span className="font-semibold text-green-700">Join us</span> in
                 building technology that empowers people, strengthens systems,
                 and shapes the future.
               </p>
             </div>
-            {/* <div className="relative h-[200px] md:h-[200px] rounded-lg overflow-hidden">
+            <div className="absolute -right-35 w-[60%] md:w-[55%] h-[300px] -bottom-6">
               <Image
-                src="https://assets.rumsan.net/rahat/dsc-1908.jpg"
+                src="https://assets.rumsan.net/rumsan-group/career-info-1.png"
                 alt="Technology and innovation"
                 fill
-                className="object-cover"
+                className="object-cover object-left"
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </Container>

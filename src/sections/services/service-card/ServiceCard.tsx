@@ -54,7 +54,7 @@ export default function ServiceCard() {
               title="Global Delivery And Team Augmentation"
               subtitle="Extend Your Capacity With Dedicated Engineering, Design, And Product Teams."
               description="We provide skilled, cross-functional teams that integrate seamlessly into your workflow —helping you deliver faster, reduce costs, and scale efficiently. Our global delivery model gives you access to experienced developers, designers, analysts, and product experts with deep knowledge of Web, Mobile, Blockchain, and AI. Whether you need a long-term team or flexible project-based support, we ensure reliable, high-quality delivery."
-              imageUrl="https://assets.rumsan.net/rahat/bb6aa67663eb67ecebbbba2e1d4705934a6d85a3.jpg"
+              imageUrl="https://assets.rumsan.net/rahat/20241114-112131-720.jpg"
               imageAlt="Global delivery and team augmentation"
               imagePosition="left"
             />

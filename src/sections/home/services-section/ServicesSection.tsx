@@ -333,7 +333,7 @@ export function WhatWeDo() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 sm:gap-2 md:grid-cols-2 md:gap-4 lg:gap-4">
-              <Link href="/sectors/impact-companies">
+              <Link href="/sectors#impact-companies">
                 <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
                   <div className="relative w-full h-58 sm:h-56 md:h-64">
                     <Image
@@ -376,7 +376,7 @@ export function WhatWeDo() {
                 </Card>
               </Link>
 
-              <Link href="/sectors/government">
+              <Link href="/sectors#government">
                 <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
                   <div className="relative w-full h-58 sm:h-56 md:h-64">
                     <Image
@@ -419,7 +419,7 @@ export function WhatWeDo() {
                 </Card>
               </Link>
 
-              <Link href="/sectors/humanitarian-development">
+              <Link href="/sectors#humanitarian-development">
                 <Card className="group border-0 bg-white overflow-hidden shadow-lg transition-transform duration-500 hover:-translate-y-1 relative rounded-2xl cursor-pointer">
                   <div className="relative w-full h-58 sm:h-56 md:h-64">
                     <Image

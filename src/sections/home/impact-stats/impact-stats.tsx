@@ -20,7 +20,7 @@ export const ImpactStats = () => {
           {/* Projects Deployed */}
           <StatCard
             icon={<Folder className="w-12 h-12" strokeWidth={1.5} />}
-            number="10"
+            number="25+"
             label="Projects Deployed"
             image="https://assets.rumsan.net/rahat/projects.jpg"
             height="259px"
