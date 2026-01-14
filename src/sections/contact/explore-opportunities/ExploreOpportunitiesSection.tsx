@@ -48,7 +48,7 @@ export default function ExploreOpportunitiesSection() {
             <div className="px-6 md:px-8 pb-6 md:pb-8">
               <div className="h-72 md:h-80 overflow-hidden relative rounded-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80"
+                  src="https://assets.rumsan.net/rahat/img-20251113-113824979.jpg"
                   alt="Career opportunities"
                   fill
                   className="object-cover"
@@ -86,7 +86,7 @@ export default function ExploreOpportunitiesSection() {
             <div className="px-6 md:px-8 pb-6 md:pb-8">
               <div className="h-72 md:h-80 overflow-hidden relative rounded-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80"
+                  src="https://assets.rumsan.net/rahat/img-8094-720.jpg"
                   alt="Fellowship program"
                   fill
                   className="object-cover"

@@ -29,7 +29,7 @@ export default function ProjectsSection() {
             href="/portfolio"
             className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
           >
-            Explore our works
+            Explore our work
             <ArrowRight className="w-5 h-5" />
           </Link>
         </motion.div>

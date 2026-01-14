@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Folder, Globe, Users, Heart, GithubIcon } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { ImpactStats } from "./impact-stats";
 

@@ -28,7 +28,7 @@ export default function FeatureCards() {
               src="https://assets.rumsan.net/rahat/whatsapp-image-2024-02-28-at-1.29.14-pm-1.jpeg"
               alt="Human-Centric Design"
               fill
-              className="object-cover transition-transform duration-700 hover:scale-110"
+              className="object-cover object-top transition-transform duration-700 hover:scale-110"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
             />
             <div className="absolute bottom-6 left-6">

@@ -49,7 +49,7 @@ export const ImpactStats = () => {
           <StatCard
             icon={<Heart className="w-12 h-12" strokeWidth={1.5} />}
             number="7000+"
-            label="Upskilled in digital finance &web 3"
+            label="Upskilled in Digital Finance & Web3"
             image="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=800&q=80"
             height="307px"
           />

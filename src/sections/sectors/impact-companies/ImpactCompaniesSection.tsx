@@ -7,48 +7,15 @@ import {
   ArrowRight,
   Sparkles,
   Zap,
-  Users,
   Activity,
+  Users,
   Rocket,
   Lock,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
-interface Service {
-  icon: string;
-  title: string;
-}
-
-interface SectorDetailSectionProps {
-  title: string;
-  subtitle: string;
-  description: string;
-  detailedDescription?: string;
-  imageUrl: string;
-  imageAlt: string;
-  services: Service[];
-}
-
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  sparkles: Sparkles,
-  zap: Zap,
-  users: Users,
-  wave: Activity,
-  rocket: Rocket,
-  lock: Lock,
-};
-
-export default function SectorDetailSection({
-  title,
-  subtitle,
-  description,
-  detailedDescription,
-  imageUrl,
-  imageAlt,
-  services,
-}: SectorDetailSectionProps) {
-
+export default function ImpactCompaniesSection() {
   return (
     <section className="py-10">
       <Container>
@@ -66,18 +33,26 @@ export default function SectorDetailSection({
           {/* Left Side - Text Content */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              {title}: {subtitle}
+              Rumsan For Impact Companies: Scaling Purpose With Technology
             </h2>
             <p className="text-base md:text-lg text-gray-600 leading-relaxed">
-              {detailedDescription || description}
+              We help purpose-driven organizations use technology to scale their
+              mission, prove their impact, and build trust with customers,
+              partners, and investors. Impact companies operate in complex
+              environments balancing mission, sustainability, and growth. We
+              support you by designing digital systems that bring transparency,
+              automate operations, and strengthen credibility. From circular
+              economy platforms to supply-chain traceability and digital
+              incentive tools, we help impact enterprises build technology that
+              evolves with their goals and scales to new markets.
             </p>
           </div>
 
           {/* Right Side - Image */}
           <div className="relative h-[300px] md:h-[400px] lg:h-[500px] rounded-xl overflow-hidden">
             <Image
-              src={imageUrl}
-              alt={imageAlt}
+              src="https://assets.rumsan.net/rahat/impact.jpg"
+              alt="Impact companies technology"
               fill
               className="object-cover"
               priority
@@ -91,51 +66,54 @@ export default function SectorDetailSection({
             What We <span className="text-gray-600">Help You With</span>
           </h2>
           <p className="text-base md:text-lg text-gray-600 text-center max-w-4xl mx-auto mb-12">
-            {description}
+            We help purpose-driven organizations use technology to scale their
+            mission, prove their impact, and build trust with customers,
+            partners, and investors.
           </p>
 
           {/* Services Grid with Join Us Card */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Row 1 - 3 service cards */}
-            {services.slice(0, 3).map((service, index) => {
-              const ServiceIcon = iconMap[service.icon] || Sparkles;
-              return (
-                <div
-                  key={index}
-                  className={`bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow ${
-                    index === 1 ? "lg:row-span-2" : ""
-                  }`}
-                >
-                  <div className="flex items-start gap-4">
-                      <ServiceIcon className="w-6 h-6 text-orange-500" />
-                    <p className="text-base md:text-lg font-semibold text-gray-900">
-                      {service.title}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-4">
+            {/* Card 1 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-start gap-4">
+                <Sparkles className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  Digital product design (Web, Mobile, Portals, dashboards)
+                </p>
+              </div>
+            </div>
 
-            {/* Row 2 - Card 4 (left), empty middle, empty right for Join Us */}
-            {/* Card 4 - Left column */}
-            {services.slice(3, 4).map((service, index) => {
-              const ServiceIcon = iconMap[service.icon] || Sparkles;
-              return (
-                <div
-                  key={index + 3}
-                  className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow"
-                >
-                  <div className="flex items-start gap-4">
-                      <ServiceIcon className="w-6 h-6 text-orange-500" />
-                    <p className="text-base md:text-lg font-semibold text-gray-900">
-                      {service.title}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+            {/* Card 2 - Spans 2 rows */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow lg:row-span-2">
+              <div className="flex flex-col items-start gap-4">
+                <Zap className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  Blockchain-powered reward & incentive mechanisms
+                </p>
+              </div>
+            </div>
 
-            {/* Join Us Card - Right column, spans 2 rows (Row 2 & 3) */}
+            {/* Card 3 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-start gap-4">
+                <Activity className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  AI tools for impact reporting, analytics & workflow automation
+                </p>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-start gap-4">
+                <Users className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  Team augmentation for long-term engineering capacity
+                </p>
+              </div>
+            </div>
+
+            {/* Join Us Card - Spans 2 rows */}
             <div className="bg-white border border-[#3A4FEA] rounded-xl p-8 md:p-10 lg:p-12 lg:row-span-2 flex flex-col justify-between">
               <p className="text-base md:text-lg text-gray-800 leading-relaxed mb-6">
                 <span className="font-semibold text-[#3A4FEA]">Join us</span> in
@@ -150,42 +128,25 @@ export default function SectorDetailSection({
               </Link>
             </div>
 
-            {/* Row 3 - Rocket card (left), Lock card (middle) */}
-            {/* Rocket card - Left column */}
-            {services.slice(4, 5).map((service, index) => {
-              const ServiceIcon = iconMap[service.icon] || Sparkles;
-              return (
-                <div
-                  key={index + 4}
-                  className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow"
-                >
-                  <div className="flex items-start gap-4">
-                      <ServiceIcon className="w-6 h-6 text-orange-500" />
-                    <p className="text-base md:text-lg font-semibold text-gray-900">
-                      {service.title}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+            {/* Card 5 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-start gap-4">
+                <Rocket className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  From MVP to scale: roadmap, architecture & global rollout
+                </p>
+              </div>
+            </div>
 
-            {/* Lock card - Middle column */}
-            {services.slice(5, 6).map((service, index) => {
-              const ServiceIcon = iconMap[service.icon] || Sparkles;
-              return (
-                <div
-                  key={index + 5}
-                  className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow"
-                >
-                  <div className="flex items-start gap-4">
-                      <ServiceIcon className="w-6 h-6 text-orange-500" />
-                    <p className="text-base md:text-lg font-semibold text-gray-900">
-                      {service.title}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+            {/* Card 6 */}
+            <div className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-start gap-4">
+                <Lock className="w-6 h-6 text-orange-500" />
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  Traceability & transparency systems
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -204,7 +165,7 @@ export default function SectorDetailSection({
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Use Case 1 */}
             <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/80 transition-all">
-              <p   className="text-lg font-semibold text-gray-900 mb-4">
+              <p className="text-lg font-semibold text-gray-900 mb-4">
                 Digitizing plastic recycling & reward flows
               </p>
               <button className="bg-[#3A4FEA] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#2d3fc7] transition-colors">
