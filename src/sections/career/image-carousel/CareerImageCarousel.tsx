@@ -16,7 +16,7 @@ const images = [
     alt: "Team collaboration",
   },
   {
-    src: "https://assets.rumsan.net/rahat/3bf29d55d19cc3cf21ce134a843025220414d5be.jpg",
+    src: "https://assets.rumsan.net/rahat/img-5007.webp",
     alt: "Team working together",
   },
   {
@@ -28,7 +28,7 @@ const images = [
     alt: "Team meeting",
   },
   {
-    src: "https://assets.rumsan.net/rahat/20251111-152206.jpg",
+    src: "https://assets.rumsan.net/rahat/img-20251113-113824979.jpg",
     alt: "Rumsan team",
   },
 ];

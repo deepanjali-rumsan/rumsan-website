@@ -86,7 +86,7 @@ export default function PerksSection() {
           <div className="hidden md:block relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow h-full min-h-[300px]">
             <Image
               src="https://assets.rumsan.net/rahat/img-2.jpg"
-              alt="Team meeting at outdoor cafe"
+              alt="Team at Futsal"
               fill
               className="object-cover"
             />

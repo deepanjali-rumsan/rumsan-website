@@ -9,7 +9,7 @@ export default function Hero() {
   const firstSlogan = (
     <>
       Bridging Yesterday&apos;s Problems With{" "}
-      <span className="text-gray-500">Tomorrow&apos;s Solution</span>
+      <span className="text-gray-500">Tomorrow&apos;s Solutions</span>
     </>
   );
 

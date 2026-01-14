@@ -23,7 +23,7 @@ export const sectors: Sector[] = [
     description:
       "We help purpose-driven organizations use technology to scale their mission, prove their impact, and build trust with customers, partners, and investors.",
     imageUrl:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+      "https://assets.rumsan.net/rahat/impact.jpg",
     imageAlt: "Impact companies technology",
     imagePosition: "right",
     detailedDescription:
@@ -64,7 +64,7 @@ export const sectors: Sector[] = [
     description:
       "Governments need systems that are secure, citizen-centric, and built for long-term adoption. We help public sector organizations design and implement digital solutions that enhance transparency, improve service delivery, and build public trust. Our approach combines rigorous security practices, user-centered design, and sustainable technology choices that serve citizens effectively.",
     imageUrl:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80",
+      "https://assets.rumsan.net/rahat/10-2.png",
     imageAlt: "Government digital systems",
     imagePosition: "left",
     detailedDescription:
@@ -104,11 +104,11 @@ export const sectors: Sector[] = [
     description:
       "We build reliable, secure digital tools that help humanitarian and development organizations deliver aid efficiently, transparently, and at scale. From cash transfer systems to program management platforms, our solutions are designed for challenging field conditions, diverse user needs, and long-term sustainability. We work closely with local partners, governments, and field teams to ensure our technology serves those who need it most.",
     imageUrl:
-      "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=800&q=80",
+      "https://assets.rumsan.net/rahat/human.jpeg",
     imageAlt: "Humanitarian and development technology",
     imagePosition: "right",
     detailedDescription:
-      "We build reliable, secure digital tools that help humanitarian and development organizations deliver aid efficiently, transparently, and at scale. From cash transfer systems to program management platforms, our solutions are designed for challenging field conditions, diverse user needs, and long-term sustainability. We work closely with local partners, governments, and field teams to ensure our technology serves those who need it most.",
+      " We build reliable, secure digital tools that help humanitarian and development organizations deliver aid efficiently, transparently, and at scale. Humanitarian and development programs require trust, speed, and accountability especially when working with vulnerable communities. We co-design technology with INGOs, UN agencies, donors, and innovation accelerators to create systems that support cash assistance, anticipatory action, education, connectivity, financial inclusion, and climate resilience. Our solutions are field-tested in multiple countries and built for reliability in low-connectivity or resource-constrained environments.",
     services: [
       {
         icon: "sparkles",
